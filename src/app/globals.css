@@ -453,18 +453,31 @@ nav .container {
 
 .hero-btns-persistent {
   position: absolute;
-  top: 70%;
-  left: 24px;
+  top: 65%;
+  left: 20px;
   display: flex;
-  gap: 20px;
-  width: calc(100% - 48px);
+  gap: 12px;
+  width: calc(100% - 40px);
   animation: fadeInUp 1s ease forwards 1s;
   z-index: 50;
 }
 
+@media (max-width: 768px) {
+  .hero-btns-persistent {
+    top: auto;
+    bottom: 120px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-btns-persistent a {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 @media (max-height: 700px) {
   .hero-btns-persistent {
-    top: 65%;
+    bottom: 100px;
   }
 }
 
@@ -488,7 +501,7 @@ nav .container {
 
 .hero-indicators {
   position: absolute;
-  bottom: 80px;
+  bottom: 60px;
   left: 24px;
   display: flex;
   align-items: center;
@@ -498,9 +511,10 @@ nav .container {
 
 @media (max-width: 768px) {
   .hero-indicators {
-    bottom: 40px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+    gap: 15px;
   }
 }
 
