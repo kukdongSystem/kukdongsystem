@@ -520,6 +520,10 @@ nav .container {
 }
 
 @media (max-width: 768px) {
+  .hero-main-area {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
   .hero-indicators {
     position: relative !important;
     bottom: auto !important;
@@ -528,8 +532,9 @@ nav .container {
     width: 100% !important;
     justify-content: center !important;
     transform: none !important;
-    margin-top: 60px !important;
-    padding-bottom: 40px !important;
+    margin-top: 40px !important;
+    padding-bottom: 60px !important;
+    z-index: 10;
   }
 }
 

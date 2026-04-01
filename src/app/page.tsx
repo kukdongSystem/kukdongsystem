@@ -219,8 +219,8 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="container hero-container-mobile" style={{ position: 'relative', width: '100%' }}>
-          <div style={{ position: 'relative', height: '100%', width: '100%' }}>
+        <div className="container hero-container-mobile" style={{ position: 'relative', width: '100%', display: 'flex', flexDirection: 'column' }}>
+          <div className="hero-main-area" style={{ position: 'relative', width: '100%', flex: 1 }}>
             {heroSlides.map((slide, index) => (
               <div 
                 key={index}
@@ -269,10 +269,9 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            
           </div>
 
-          {/* Slide Indicators */}
+          {/* Slide Indicators - Now part of the flex flow on mobile */}
           <div className="hero-indicators">
             <div className="indicator-bars">
               {heroSlides.map((_, index) => (
