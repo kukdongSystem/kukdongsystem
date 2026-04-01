@@ -451,53 +451,31 @@ nav .container {
   animation: fadeInUp 1s ease forwards 1s;
 }
 
-.hero-btns-persistent {
-  position: absolute;
-  top: 65%;
-  left: 20px;
+.hero-btns {
   display: flex;
-  gap: 12px;
-  width: calc(100% - 40px);
-  animation: fadeInUp 1s ease forwards 1s;
-  z-index: 50;
+  gap: 20px;
+  opacity: 0;
+  width: 100%;
+}
+
+.hero-content.active .hero-btns {
+  animation: fadeInUp 1s ease forwards 1.2s;
 }
 
 @media (max-width: 768px) {
-  .hero-btns-persistent {
-    top: auto;
-    bottom: 120px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-btns-persistent a {
-    width: 100%;
-    max-width: 280px;
-  }
-}
-
-@media (max-height: 700px) {
-  .hero-btns-persistent {
-    bottom: 100px;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero-btns-persistent {
-    top: calc(50% + 180px);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-btns-persistent {
-    top: calc(50% + 150px);
+  .hero-btns {
     flex-direction: column;
     gap: 12px;
+    align-items: flex-start;
   }
-  .hero-btns-persistent a {
-    width: 250px;
-    text-align: center;
+  .hero-btns a {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 20px !important;
+    font-size: 0.9rem;
   }
 }
+
 
 .hero-indicators {
   position: absolute;

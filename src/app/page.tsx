@@ -261,14 +261,15 @@ export default function Home() {
                     {slide.desc}
                   </p>
                 </div>
+
+                {/* Buttons moved inside for better flow especially on mobile */}
+                <div className="hero-btns" style={{ marginTop: '30px', display: 'flex', gap: '15px' }}>
+                  <a href="#portfolio" className="btn-primary" style={{ padding: '14px 28px' }}>{t('heroBtnPortfolio', language)}</a>
+                  <a href="#contact" className="btn-secondary" style={{ padding: '14px 28px' }}>{t('heroBtnContact', language)}</a>
+                </div>
               </div>
             ))}
             
-            {/* Persistent Buttons */}
-            <div className="hero-btns-persistent">
-              <a href="#portfolio" className="btn-primary" style={{ padding: '16px 36px' }}>{t('heroBtnPortfolio', language)}</a>
-              <a href="#contact" className="btn-secondary" style={{ padding: '16px 36px' }}>{t('heroBtnContact', language)}</a>
-            </div>
           </div>
 
           {/* Slide Indicators */}
