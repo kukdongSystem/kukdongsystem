@@ -94,32 +94,32 @@ import { t } from '@/lib/translations';
 export default function Home() {
   const { language } = useLanguage();
 
-  const staticProjects: Project[] = [
+  const getStaticProjects = (lang: any): Project[] => [
     {
       id: 1,
-      title: language === 'en' ? 'Automotive Painting Line PLC Control System' : '자동차 도장 라인 PLC 제어 시스템',
-      description: language === 'en' ? 'Built fully automated process using Mitsubishi FX5U and GT25 HMI' : 'Mitsubishi FX5U 및 GT25 HMI를 이용한 완전 자동화 공정 구축',
-      tag: language === 'en' ? 'Automotive/Painting' : '자동차/도장',
+      title: t('project1Title', lang),
+      description: t('project1Desc', lang),
+      tag: t('project1Tag', lang),
       image: '/images/plc.png'
     },
     {
       id: 2,
-      title: language === 'en' ? 'Semiconductor Wafer Transfer Robot Handling' : '반도체 웨이퍼 이송 로봇 핸들링',
-      description: language === 'en' ? '6-axis articulated robot and vision system integrated precision control solution' : '6축 다관절 로봇 및 비전 시스템 통합 정밀 제어 솔루션',
-      tag: language === 'en' ? 'Semiconductor/Robot' : '반도체/로봇',
+      title: t('project2Title', lang),
+      description: t('project2Desc', lang),
+      tag: t('project2Tag', lang),
       image: '/images/robot.png',
       images: ['/images/robot.png', '/images/plc.png', '/images/hmi.png']
     },
     {
       id: 3,
-      title: language === 'en' ? 'Smart Factory SCADA Integrated Control' : '스마트 팩토리 SCADA 통합 관제',
-      description: language === 'en' ? 'Real-time monitoring and data logging system for overall factory operation status' : '공장 전체 가동 현황 실시간 모니터링 및 데이터 로깅 시스템',
-      tag: language === 'en' ? 'SCADA/Smart Factory' : 'SCADA/스마트팩토리',
+      title: t('project3Title', lang),
+      description: t('project3Desc', lang),
+      tag: t('project3Tag', lang),
       image: '/images/hmi.png'
     }
   ];
 
-  const [allProjects, setAllProjects] = useState<Project[]>(staticProjects);
+  const [allProjects, setAllProjects] = useState<Project[]>(getStaticProjects(language));
   const [currentHero, setCurrentHero] = useState(0);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -128,9 +128,18 @@ export default function Home() {
 
   // Update static projects in state when language changes
   useEffect(() => {
+    const currentStatic = getStaticProjects(language);
+    
+    // Also update the currently open modal if it's a static project
+    if (selectedProject) {
+      const updated = currentStatic.find(p => p.id === selectedProject.id);
+      if (updated) setSelectedProject(updated);
+    }
+
     setAllProjects(prev => {
-      const dynamicProjects = prev.filter(p => !staticProjects.find(sp => sp.id === p.id));
-      return [...dynamicProjects, ...staticProjects];
+      // Remove old static projects (id 1, 2, 3) and add freshly translated ones
+      const dynamicProjects = prev.filter(p => !currentStatic.find(sp => sp.id === p.id));
+      return [...dynamicProjects, ...currentStatic].sort((a, b) => a.id - b.id);
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
