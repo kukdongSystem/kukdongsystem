@@ -219,7 +219,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="container" style={{ position: 'relative', height: '85vh', minHeight: '600px', width: '100%' }}>
+        <div className="container hero-container-mobile" style={{ position: 'relative', width: '100%' }}>
           <div style={{ position: 'relative', height: '100%', width: '100%' }}>
             {heroSlides.map((slide, index) => (
               <div 
