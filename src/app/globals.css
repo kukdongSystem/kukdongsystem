@@ -521,12 +521,15 @@ nav .container {
 
 @media (max-width: 768px) {
   .hero-indicators {
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    justify-content: center;
-    transform: none;
+    position: relative !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+    transform: none !important;
+    margin-top: 60px !important;
+    padding-bottom: 40px !important;
   }
 }
 
