@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://kukdongsystem.vercel.app",
-  }
+  },
+  verification: {
+    google: "PB7bHtg4899qkT-vyNjA3flc7D8nRf-MCUhfBxb5Y5Q",
+  },
 };
 
 import { LanguageProvider } from '@/contexts/LanguageContext';
