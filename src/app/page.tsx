@@ -304,7 +304,7 @@ export default function Home() {
                 
                 <div className="hero-text-wrapper">
                   <h1 className="hero-title">
-                    {slide.title.split('\n').map((line, i) => (
+                    {slide.title.split('\n').map((line: string, i: number) => (
                       <div key={i} className="hero-title-line">
                         <span className="hero-title-text text-gradient">{line}</span>
                       </div>
@@ -591,7 +591,7 @@ export default function Home() {
                   <div className="service-icon" style={{ marginBottom: 0 }}><Icons.Phone /></div>
                   <div style={{ textAlign: 'left' }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('contactTechConsult', language)}</p>
-                    <h3 style={{ fontSize: '1.8rem', fontWeight: '800' }}>031) 492-0895</h3>
+                    <h3 style={{ fontSize: '1.8rem', fontWeight: '800' }}>{t('companyPhone', language)}</h3>
                   </div>
                 </div>
 
@@ -600,7 +600,7 @@ export default function Home() {
                   <div className="service-icon" style={{ marginBottom: 0 }}><Icons.Printer /></div>
                   <div style={{ textAlign: 'left' }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('contactDirectFax', language)}</p>
-                    <h3 style={{ fontSize: '1.6rem', fontWeight: '700' }}>031) 495-3686</h3>
+                    <h3 style={{ fontSize: '1.6rem', fontWeight: '700' }}>{t('companyFax', language)}</h3>
                   </div>
                 </div>
 

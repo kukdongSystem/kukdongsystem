@@ -129,6 +129,8 @@ export const dict: Translations = {
   contactDirectFax: { ko: '직통 팩스(FAX)', en: 'Direct FAX', zh: '直通传真(FAX)', ja: '直通FAX', de: 'Direktes FAX' },
   contactOfficialEmail: { ko: '대표 이메일', en: 'Official Email', zh: '代表邮箱', ja: '代表メール', de: 'Offizielle E-Mail' },
   contactLiveConsultBtn: { ko: '지금 실시간 상담하기', en: 'Get Live Consultation', zh: '现在进行实时咨询', ja: '今すぐ相談する', de: 'Jetzt live beraten lassen' },
+  companyPhone: { ko: '031) 492-0895', en: '+82 31-492-0895', zh: '+82 31-492-0895', ja: '+82 31-492-0895', de: '+82 31-492-0895' },
+  companyFax: { ko: '031) 495-3686', en: '+82 31-495-3686', zh: '+82 31-495-3686', ja: '+82 31-495-3686', de: '+82 31-495-3686' },
   contactDirectionsTitle: { ko: '오시는 길', en: 'Directions & Map', zh: '路线指南', ja: 'アクセス', de: 'Wegbeschreibung' },
   mapAddress: { ko: '📍 대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호 (극동계전)', en: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '📍 大韩民国 京畿道 安山市 檀园区 产团路 326 安山流通商街 19栋 104号 (极东计电)', ja: '📍 大韓民国 京畿道 安山市 檀園区 産団路 326 安山流通商店街 19棟 104号 (極東計電)', de: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
   mapNaver: { ko: '네이버 지도', en: 'Naver Map', zh: 'Naver 地图', ja: 'NAVER地図', de: 'Naver Karte' },

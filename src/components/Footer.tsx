@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
         <div style={{ textAlign: 'right' }}>
           <p>{t('footerAddress', language)}</p>
-          <p>☎️ 031) 492-0895 | 📠 031) 495-3686 | ✉️ soons28@naver.com</p>
+          <p>☎️ {t('companyPhone', language)} | 📠 {t('companyFax', language)} | ✉️ soons28@naver.com</p>
         </div>
       </div>
     </footer>
