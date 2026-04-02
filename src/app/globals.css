@@ -231,6 +231,46 @@ nav .container {
   color: var(--accent-primary);
 }
 
+.lang-select {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: var(--transition-smooth);
+  backdrop-filter: blur(5px);
+}
+
+.lang-select:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 0;
+  }
+  
+  .lang-select {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
+
+  .logo span:first-child {
+    font-size: 0.95rem;
+  }
+  
+  .logo span:last-child {
+    font-size: 0.65rem;
+  }
+}
+
 /* Hero Section */
 .hero {
   min-height: 85vh;
