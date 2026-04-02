@@ -18,12 +18,24 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Check local storage for saved language
     const savedLang = localStorage.getItem('app-language') as Language;
-    if (savedLang && ['ko', 'en', 'zh', 'ja', 'de'].includes(savedLang)) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setLanguageState((prev) => (prev !== savedLang ? savedLang : prev));
+    const supportedLangs: Language[] = ['ko', 'en', 'zh', 'ja', 'de'];
+
+    if (savedLang && supportedLangs.includes(savedLang)) {
+      setLanguageState(savedLang);
       document.documentElement.lang = savedLang;
     } else {
-      document.documentElement.lang = 'ko';
+      // Automatic detection via browser language
+      const browserLang = navigator.language.toLowerCase();
+      let detected: Language = 'ko';
+
+      if (browserLang.startsWith('ko')) detected = 'ko';
+      else if (browserLang.startsWith('en')) detected = 'en';
+      else if (browserLang.startsWith('zh')) detected = 'zh';
+      else if (browserLang.startsWith('ja')) detected = 'ja';
+      else if (browserLang.startsWith('de')) detected = 'de';
+
+      setLanguageState(detected);
+      document.documentElement.lang = detected;
     }
     setMounted(true);
   }, []);
