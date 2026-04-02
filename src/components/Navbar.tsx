@@ -8,10 +8,10 @@ import { t } from '@/lib/translations';
 export default function Navbar() {
   const { language, setLanguage } = useLanguage();
   return (
-    <nav>
-      <div className="container">
-        <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 100 100" fill="none">
+    <nav className="navbar">
+      <div className="container nav-container">
+        <Link href="/" className="logo">
+          <svg className="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
             <defs>
               <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#3B82F6" />
@@ -21,9 +21,9 @@ export default function Navbar() {
             <path d="M20 20 L45 50 L20 80 L35 80 L60 50 L35 20 Z" fill="url(#logo-gradient)" />
             <path d="M50 20 L75 50 L50 80 L65 80 L90 50 L65 20 Z" fill="url(#logo-gradient)" opacity="0.6" />
           </svg>
-          <div style={{ display: 'flex', flexDirection: 'column', lineHeight: '1.2', fontSize: '1.1rem' }}>
-            <span style={{ fontWeight: '900', letterSpacing: '0.08em', color: '#fff' }}>KUKDONG</span>
-            <span style={{ fontWeight: '500', fontSize: '0.75rem', color: 'var(--accent-primary)', letterSpacing: '0.2em' }}>SYSTEM</span>
+          <div className="logo-text">
+            <span>KUKDONG</span>
+            <span>SYSTEM</span>
           </div>
         </Link>
         <ul className="nav-links">
@@ -32,7 +32,7 @@ export default function Navbar() {
           <li><Link href="/#portfolio">{t('navPortfolio', language)}</Link></li>
           <li><Link href="/#contact">{t('navContact', language)}</Link></li>
         </ul>
-        <div className="nav-lang-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
+        <div className="nav-lang-wrapper">
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value as Language)}
