@@ -32,7 +32,7 @@ export default function Navbar() {
           <li><Link href="/#portfolio">{t('navPortfolio', language)}</Link></li>
           <li><Link href="/#contact">{t('navContact', language)}</Link></li>
         </ul>
-        <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+        <div className="nav-lang-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value as Language)}

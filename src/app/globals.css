@@ -202,6 +202,8 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .logo {
@@ -254,20 +256,29 @@ nav .container {
 
 @media (max-width: 768px) {
   nav {
-    padding: 15px 0;
+    padding: 12px 0;
   }
   
+  .container {
+    padding: 0 15px;
+  }
+
   .lang-select {
-    padding: 5px 12px;
-    font-size: 0.75rem;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    max-width: 90px;
+  }
+
+  .logo {
+    gap: 8px;
   }
 
   .logo span:first-child {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
   
   .logo span:last-child {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 }
 
