@@ -26,7 +26,7 @@ export default function Navbar() {
           </div>
         </a>
         <ul className="nav-links">
-          <li><a href="/#home">{t('navAbout', language)}</a></li>
+          <li><a href="/#about">{t('navAbout', language)}</a></li>
           <li><a href="/#services">{t('navServices', language)}</a></li>
           <li><a href="/#portfolio">{t('navPortfolio', language)}</a></li>
           <li><a href="/#contact">{t('navContact', language)}</a></li>

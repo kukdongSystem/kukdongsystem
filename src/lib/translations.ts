@@ -8,259 +8,142 @@ export const dict: Translations = {
   navAbout: { ko: '회사소개', en: 'About Us', zh: '关于我们', ja: '会社案内', de: 'Über uns' },
   navServices: { ko: '기술분야', en: 'Tech Specs', zh: '技术领域', ja: '技術分野', de: 'Technik' },
   navPortfolio: { ko: '포트폴리오', en: 'Portfolio', zh: '成功案例', ja: 'ポートフォリオ', de: 'Portfolio' },
-  
-  project1Title: { 
-    ko: '자동차 도장 라인 PLC 제어 시스템', 
-    en: 'Automotive Painting Line PLC Control System', 
-    zh: '汽车涂装线PLC控制系统', 
-    ja: '自動車塗装ラインPLC制御システム', 
-    de: 'Automobil-Lackierlinie PLC-Steuerungssystem' 
-  },
-  project1Desc: { 
-    ko: 'Mitsubishi FX5U 및 GT25 HMI를 이용한 완전 자동화 공정 구축', 
-    en: 'Built fully automated process using Mitsubishi FX5U and GT25 HMI', 
-    zh: '使用三菱FX5U和GT25 HMI构建的全自动化流程', 
-    ja: '三菱FX5UおよびGT25 HMIを使用した完全自動化プロセスの構築', 
-    de: 'Vollautomatisierter Prozess mit Mitsubishi FX5U und GT25 HMI' 
-  },
-  project1Tag: { 
-    ko: '자동차/도장', 
-    en: 'Automotive/Painting', 
-    zh: '汽车/涂装', 
-    ja: '自動車/塗装', 
-    de: 'Automobil/Lackierung' 
-  },
-  project2Title: { 
-    ko: '반도체 웨이퍼 이송 로봇 핸들링', 
-    en: 'Semiconductor Wafer Transfer Robot Handling', 
-    zh: '半导体晶圆传输机器人处理', 
-    ja: '半導体ウェーハ搬送ロボットハンドリング', 
-    de: 'Halbleiter-Wafer-Transfer-Robotik' 
-  },
-  project2Desc: { 
-    ko: '6축 다관절 로봇 및 비전 시스템 통합 정밀 제어 솔루션', 
-    en: '6-axis articulated robot and vision system integrated precision control solution', 
-    zh: '六轴关节机器人与视觉系统集成精密控制解决方案', 
-    ja: '6軸多関節ロボットとビジョンシステムの統合精密制御ソリューション', 
-    de: 'Integrierte Präzisionssteuerung mit 6-Achsen-Knickarmroboter und Bildverarbeitung' 
-  },
-  project2Tag: { 
-    ko: '반도체/로봇', 
-    en: 'Semiconductor/Robot', 
-    zh: '半导体/机器人', 
-    ja: '半導体/ロボット', 
-    de: 'Halbleiter/Robotik' 
-  },
-  project3Title: { 
-    ko: '스마트 팩토리 SCADA 통합 관제', 
-    en: 'Smart Factory SCADA Integrated Control', 
-    zh: '智能工厂 SCADA 集成控制', 
-    ja: 'スマートファクトリー SCADA 統合監視', 
-    de: 'Smart Factory SCADA-Integrationssteuerung' 
-  },
-  project3Desc: { 
-    ko: '공장 전체 가동 현황 실시간 모니터링 및 데이터 로깅 시스템', 
-    en: 'Real-time monitoring and data logging system for overall factory operation status', 
-    zh: '针对全厂运行状态的实时监控与数据记录系统', 
-    ja: '工場全体の稼働状況のリアルタイム監視とデータロギングシステム', 
-    de: 'Echtzeit-Überwachung und Datenprotokollierung für den gesamten Fabrikbetrieb' 
-  },
-  project3Tag: { 
-    ko: 'SCADA/스마트팩토리', 
-    en: 'SCADA/Smart Factory', 
-    zh: 'SCADA/智能工厂', 
-    ja: 'SCADA/スマートファクトリー', 
-    de: 'SCADA/Smart Factory' 
-  },
-
   navContact: { ko: '문의하기', en: 'Contact', zh: '联系我们', ja: 'お問い合わせ', de: 'Kontakt' },
   navConsult: { ko: '상담 신청', en: 'Request Consult', zh: '申请咨询', ja: 'ご相談', de: 'Beratung anfordern' },
 
-  footerRights: { 
-    ko: '© 2026 KUKDONG SYSTEM All Rights Reserved.', 
-    en: '© 2026 KUKDONG SYSTEM All Rights Reserved.', 
-    zh: '© 2026 KUKDONG SYSTEM 保留所有权利。', 
-    ja: '© 2026 KUKDONG SYSTEM All Rights Reserved.', 
-    de: '© 2026 KUKDONG SYSTEM Alle Rechte vorbehalten.' 
-  },
-  footerAdmin: { ko: 'Admin Login', en: 'Admin Login', zh: '管理员登录', ja: '管理者ログイン', de: 'Admin-Login' },
-  footerAddress: { 
-    ko: '경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호', 
-    en: '104, 19, Sandan-ro 326, Danwon-gu, Ansan-si, Gyeonggi-do',
-    zh: '京畿道安山市檀园区产团路326 安山流通商街19栋104号',
-    ja: '京畿道安山市檀園区産단路326 安山流通商店街19棟104号',
-    de: '104, 19, Sandan-ro 326, Danwon-gu, Ansan-si, Gyeonggi-do'
-  },
+  project1Title: { ko: '자동차 도장 라인 PLC 제어 시스템', en: 'Automotive Painting Line PLC Control System', zh: '汽车涂装线PLC控制系统', ja: '自動車塗装ラインPLC制御システム', de: 'Automobil-Lackierlinie PLC-Steuerungssystem' },
+  project1Desc: { ko: 'Mitsubishi FX5U 및 GT25 HMI를 이용한 완전 자동화 공정 구축', en: 'Built fully automated process using Mitsubishi FX5U and GT25 HMI', zh: '使用三菱FX5U和GT25 HMI构建的全自动化流程', ja: '三菱FX5UおよびGT25 HMIを使用した完全自動화 프로세스의 構築', de: 'Vollautomatisierter Prozess mit Mitsubishi FX5U und GT25 HMI' },
+  project1Tag: { ko: '자동차/도장', en: 'Automotive/Painting', zh: '汽车/涂装', ja: '自動車/塗装', de: 'Automobil/Lackierung' },
+  
+  project2Title: { ko: '반도체 웨이퍼 이송 로봇 핸들링', en: 'Semiconductor Wafer Transfer Robot Handling', zh: '半导体晶圆传输机器人处理', ja: '半導体ウェーハ搬送ロボットハンドリング', de: 'Halbleiter-Wafer-Transfer-Robotik' },
+  project2Desc: { ko: '6축 다관절 로봇 및 비전 시스템 통합 정밀 제어 솔루션', en: '6-axis articulated robot and vision system integrated precision control solution', zh: '六轴关节机器人与视觉系统集成精密控制解决方案', ja: '6軸多関節ロボットとビジョンシステムの統合精密制御ソリューション', de: 'Integrierte Präzisionssteuerung mit 6-Achsen-Knickarmroboter und Bildverarbeitung' },
+  project2Tag: { ko: '반도체/로봇', en: 'Semiconductor/Robot', zh: '半导体/机器人', ja: '半導体/ロボット', de: 'Halbleiter/Robotik' },
+  
+  project3Title: { ko: '스마트 팩토리 SCADA 통합 관제', en: 'Smart Factory SCADA Integrated Control', zh: '智能工厂 SCADA 集成控制', ja: 'スマートファクトリー SCADA 統合監視', de: 'Smart Factory SCADA-Integrationssteuerung' },
+  project3Desc: { ko: '공장 전체 가동 현황 실시간 모니터링 및 데이터 로깅 시스템', en: 'Real-time monitoring and data logging system for overall factory operation status', zh: '针对全厂运行状态的实时监控与数据记录系统', ja: '工場全体の稼働状況のリアルタイム監視と', de: 'Echtzeit-Überwachung und ierung' },
+  project3Tag: { ko: 'SCADA/스마트팩토리', en: 'SCADA/Smart Factory', zh: 'SCADA/智能工厂', ja: 'SCADA/スマートファクトリー', de: 'SCADA/Smart Factory' },
 
+  // Textile Projects (New)
+  project4Title: { ko: '원단 코팅기(Coating) 제어 시스템', en: 'Textile Coating Machine Control System', zh: '纺织涂层机控制系统', ja: '生地コーティング機制御システム', de: 'Beschichtungsmaschinen-Steuerung' },
+  project4Desc: { ko: '미세 텐션 유지 및 약품 코팅 두께 정밀 제어로 품질 혁신.', en: 'Quality innovation through fine tension maintenance and coating thickness control.', zh: '精细张力维持与涂层厚度控制', ja: '微細テンション維持およびコーティング厚さの精密制御', de: 'Qualitätsinnovationen durch präzise Spannungsregelung.' },
+  project4Tag: { ko: '섬유기계/코팅', en: 'Textile/Coating', zh: '纺织/涂层', ja: '繊維機械/コーティング', de: 'Textil/Beschichtung' },
+
+  project5Title: { ko: '원단 리락싱(Relaxing)기 자동 제어', en: 'Textile Relaxing Machine Auto Control', zh: '纺织松弛机自动控制', ja: '生地リラクシング機自動制御', de: 'Textil-Relaxing-Maschinensteuerung' },
+  project5Desc: { ko: '원단의 스트레스 제거를 위한 서보 동기화 및 속도 조절 시스템.', en: 'Servo synchronization and speed control for stress removal of fabrics.', zh: '用于取出面料应力的伺服同步系统', ja: '生地のストレス除去のためのサーボ同期および速度調節システム', de: 'Servosynchronisation für Textil-Entspannungsprozesse.' },
+  project5Tag: { ko: '섬유기계/정밀제어', en: 'Textile/Precision', zh: '纺织/精密', ja: '繊維機械/精密制御', de: 'Textil/Präzision' },
+
+  project6Title: { ko: '섬유 비터(Beater)기 제어 솔루션', en: 'Textile Beater Machine Control Solution', zh: '纺织打浆机控制解决方案', ja: '繊維ビーター機制御ソリューション', de: 'Textil-Beater-Steuerungslösung' },
+  project6Desc: { ko: '강력한 기계적 비팅 공정 최적화 및 인버터 주파수 가변 제어.', en: 'Optimization of mechanical beating process and inverter frequency control.', zh: '机械打浆工艺优化与变频控制', ja: '強力な機械的ビーティング工程の最適化およびインバータ制御', de: 'Optimierung des mechanischen Schlagvorgangs.' },
+  project6Tag: { ko: '섬유기계/인버터', en: 'Textile/Inverter', zh: '纺织/变频', ja: '繊維機械/インバータ', de: 'Textil/Inverter' },
+
+  project7Title: { ko: '텐터 필터청소기 자동화 전문', en: 'Tenter Filter Cleaner Automation', zh: '定型机过滤器清洗自动化', ja: 'テンターフィルター洗浄機自動化', de: 'Tenter-Filterreiniger-Automatisierung' },
+  project7Desc: { ko: '고효율 필터 클리닝 및 사이클 자동화로 필터 수명 연장.', en: 'Extending filter life through high-efficiency cleaning cycles.', zh: '通过高效过滤器清洗延长使用寿命', ja: '高効率フィルタークリーニングおよびサイクル自動化', de: 'Verlängerung der Filterlebensdauer durch Automatisierung.' },
+  project7Tag: { ko: '섬유기계/필터', en: 'Textile/Filter', zh: '纺织/过滤器', ja: '繊維機械/フィルター', de: 'Textil/Filter' },
+
+  // Food Projects (New)
+  project8Title: { ko: '소스 터널냉각기(Tunnel Cooler) 솔루션', en: 'Sauce Tunnel Cooler Solution', zh: '酱汁隧道冷却器解决方案', ja: 'ソーストンネル冷却機ソリューション', de: 'Saucentunnel-Kühlerlösung' },
+  project8Desc: { ko: '품질 저하 없는 고속 냉각 공정을 위한 온도 모니터링 시스템.', en: 'Temperature monitoring for high-speed cooling without food quality loss.', zh: '用于不降低品质的高速冷却温控系统', ja: '品質低下のない高速冷却工程のための温度管理', de: 'Temperaturüberwachung für Hochgeschwindigkeitskühlung.' },
+  project8Tag: { ko: '식품기계/냉각', en: 'Food/Cooling', zh: '食品/冷却', ja: '食品機械/冷却', de: 'Lebensmittel/Kühlung' },
+
+  project9Title: { ko: '식품 2차 살균기(Sterilizer) 자동 제어', en: 'Secondary Sterilizer Auto Control', zh: '食品二次杀菌机自动控制', ja: '食品2次殺菌機自動制御', de: 'Sekundär-Sterilisator-Steuerung' },
+  project9Desc: { ko: '고온 고압 살균 사이클 기록 및 자동 제어로 위생 확보.', en: 'Record high-temp high-pressure cycles for total hygiene control.', zh: '高温高压杀菌周期自动记录', ja: '高温高圧殺菌サイクルの記録および自動制御', de: 'Hygienische Steuerung von Sterilisationszyklen.' },
+  project9Tag: { ko: '식품기계/살균', en: 'Food/Sterilizer', zh: '食品/杀菌', ja: '食品機械/殺菌', de: 'Lebensmittel/Sterilisator' },
+
+  project10Title: { ko: '케첩 냉각기 및 컨베이어 통합 라인', en: 'Ketchup Cooler & Conveyor Integrated Line', zh: '番茄酱冷却器与输送带集成线', ja: 'ケチャップ冷却機およびコンベア統合ライン', de: 'Ketchup-Kühler- & Förderlinie' },
+  project10Desc: { ko: '생산 흐름에 최적화된 컨베이어 연동 제어 및 적재 자동화.', en: 'Integrated conveyor link control and automated loading.', zh: '生产流优化的输送带联动控制', ja: '生産フローに最適化されたコンベア連動制御', de: 'Integrierte Förderbandsteuerung für Ketchup-Produktion.' },
+  project10Tag: { ko: '식품기계/물류', en: 'Food/Conveyor', zh: '食品/输送', ja: '食品機械/コンベア', de: 'Lebensmittel/Förderband' },
+
+  project11Title: { ko: '식품 산업용 대형 믹서(Mixer) 제어', en: 'Industrial Food Mixer Control', zh: '工业食品混合器控制', ja: '食品産業用大型ミキサー制御', de: 'Industrielle Lebensmittelmixer-Steuerung' },
+  project11Desc: { ko: '재료 배합에 따른 정밀 속도 제어 및 부하 방지 프로토콜.', en: 'Precise speed control and load protection for material mixing.', zh: '根据配料分配精密的调速控制', ja: '材料配合に合わせた精密速度制御', de: 'Präzise Drehzahlregelung für Mischprozesse.' },
+  project11Tag: { ko: '식품기계/믹서', en: 'Food/Mixer', zh: '食品/混合', ja: '食品機械/ミキサー', de: 'Lebensmittel/Mixer' },
+
+  footerRights: { ko: '© 1987-2026 KUKDONG SYSTEM All Rights Reserved.', en: '© 1987-2026 KUKDONG SYSTEM All Rights Reserved.', zh: '© 1987-2026 KUKDONG SYSTEM 保留所有权利。', ja: '© 1987-2026 KUKDONG SYSTEM All Rights Reserved.', de: '© 1987-2026 KUKDONG SYSTEM Alle Rechte vorbehalten' },
+  footerAdmin: { ko: 'Admin Login', en: 'Admin Login', zh: '管理员登录', ja: '管理者ログイン', de: 'Admin-Login' },
+  footerAddress: { ko: '대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호', en: 'Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '大韩民国 京畿道 安山市 檀园区 产团路 326 安山流通商街 19栋 104号', ja: '大韓民国 京畿道 安山市 檀園区 産団路 326 安山流通商店街 19棟 104号', de: 'Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
+  
   heroSubtitle1: { ko: 'STANDARD OF AUTOMATION', en: 'STANDARD OF AUTOMATION', zh: '自动化的标准', ja: '自動化の基準', de: 'STANDARD DER AUTOMATISIERUNG' },
   heroSubtitle2: { ko: 'TECHNICAL EXCELLENCE', en: 'TECHNICAL EXCELLENCE', zh: '技术卓越', ja: '技術の卓越性', de: 'TECHNISCHE EXZELLENZ' },
   heroSubtitle3: { ko: 'RELIABILITY & SUPPORT', en: 'RELIABILITY & SUPPORT', zh: '可靠性与支持', ja: '信頼性とサポート', de: 'ZUVERLÄSSIGKEIT & SUPPORT' },
-
-  heroTitle1: { 
-    ko: '공장 자동화의\n새로운 표준', 
-    en: 'The New Standard\nin Factory Automation',
-    zh: '工厂自动化的\n新标准',
-    ja: '工場自動化の\n新しい標準',
-    de: 'Der neue Standard\nder Fabrikautomation'
-  },
-  heroTitle2: { 
-    ko: '최고의 기술력,\n최적의 솔루션', 
-    en: 'Top Technology,\nOptimal Solutions',
-    zh: '顶尖技术，\n最佳解决方案',
-    ja: '最高の技術力、\n最適なソリューション',
-    de: 'Spitzentechnologie,\nOptimale Lösungen'
-  },
-  heroTitle3: { 
-    ko: '24시간 멈추지 않는\n스마트 팩토리', 
-    en: '24/7 Non-Stop\nSmart Factory',
-    zh: '24小时不间断的\n智能工厂',
-    ja: '24시간止まらない\nスマートファクトリー',
-    de: '24/7 ununterbrochene\nSmart Factory'
-  },
-
-  heroDesc1: { 
-    ko: '극동계전은 최첨단 PLC, HMI, SCADA 솔루션을 통해 고효율 자동 제어 시스템을 구축합니다.\n고객사의 생산 효율을 극대화하는 맞춤형 제어 솔루션을 제공합니다.', 
-    en: 'KUKDONG SYSTEM builds high-efficiency automated control systems with cutting-edge PLC, HMI, and SCADA solutions.\nWe provide customized control solutions to maximize your production efficiency.',
-    zh: '极东计电通过尖端的PLC、HMI、SCADA解决方案构建高效自动化控制系统。\n我们提供定制化控制方案，助您实现生产效率最大化。',
-    ja: '極東計電は最先端のPLC、HMI、SCADAソリューションを通じて高効率な自動制御システムを構築します。\nお客様の生産効率を最大화するカスタ마이즈 제어 솔루션을 제공합니다.',
-    de: 'KUKDONG SYSTEM baut hocheffiziente automatische Steuerungssysteme mit modernsten PLC-, HMI- und SCADA-Lösungen.\nWir bieten maßgeschneiderte Lösungen zur Maximierung Ihrer Produktionseffizienz.'
-  },
-  heroDesc2: { 
-    ko: '다양한 산업 현장의 니즈에 맞춘 정확하고 안정적인 자동제어 시스템.\n기반 시설부터 복잡한 공정까지 극동계전이 책임집니다.', 
-    en: 'Accurate and stable automated control systems tailored to various industrial needs.\nFrom infrastructure to complex processes, KUKDONG SYSTEM has you covered.',
-    zh: '精确且稳定的自动化控制系统，满足各类工业现场的需求。\n从基础设施到复杂工艺，极东计电为您保驾护航。',
-    ja: '多様な産業現場のニーズに合わせた正確で安定した自動制御システム。\nインフラから複雑な工程まで極東計電が責任を持ちます。',
-    de: 'Genaue und stabile automatische Steuerungssysteme, zugeschnitten auf industrielle Anforderungen.\nVon der Infrastruktur bis zu komplexen Prozessen sind Sie bei KUKDONG SYSTEM richtig.'
-  },
-  heroDesc3: { 
-    ko: '실시간 모니터링 및 원격 제어로 공장의 다운타임을 최소화합니다.\n초연결 스마트 팩토리 시대를 극동계전과 함께 완성하세요.', 
-    en: 'Minimize factory downtime with real-time monitoring and remote control.\nComplete the era of hyper-connected smart factories with KUKDONG SYSTEM.',
-    zh: '通过实时监控和远程控制，将工厂停机时间降至最低。\n与极东计电共同迎接超连接的智能工厂时代。',
-    ja: 'リアルタイムのモニタリングと遠隔制御で工場のダウンタイムを最小化します。\n超連結スマートファクトリー時代を極東計電と共に完成させてください.',
-    de: 'Minimieren Sie die Ausfallzeiten in der Fabrik durch Echtzeitüberwachung und Fernsteuerung.\nWillkommen im Zeitalter der vernetzten Smart Factories mit KUKDONG SYSTEM.'
-  },
-
+  heroSubtitle4: { ko: 'TEXTILE SPECIALIZATION', en: 'TEXTILE SPECIALIZATION', zh: '纺织机械专业化', ja: '繊維機械専門化', de: 'TEXTIL-SPEZIALISIERUNG' },
+  heroSubtitle5: { ko: 'FOOD SAFETY AUTOMATION', en: 'FOOD SAFETY AUTOMATION', zh: '食品安全自动化', ja: '食品安全自動화', de: 'LEBENSMITTEL-AUTOMATISIERUNG' },
+  
+  heroTitle1: { ko: '공장 자동화의\n새로운 표준', en: 'The New Standard\nin Factory Automation', zh: '工厂自动化的\n新标准', ja: '工場自動化の\n新しい標準', de: 'Der neue Standard\nder Fabrikautomation' },
+  heroTitle2: { ko: '최고의 기술력,\n최적의 솔루션', en: 'Top Technology,\nOptimal Solutions', zh: '顶尖技术，\n最佳解决方案', ja: '最高の技術力、\n最適なソリューション', de: 'Spitzentechnologie,\nOptimale Lösungen' },
+  heroTitle3: { ko: '24시간 멈추지 않는\n스마트 팩토리', en: '24/7 Non-Stop\nSmart Factory', zh: '24小时不间단\n智能工厂', ja: '24時間止まらない\nスマートファクトリー', de: '24/7 ununterbrochene\nSmart Factory' },
+  heroTitle4: { ko: '섬유 생산의 혁신,\n정밀 자동화 시스템', en: 'Textile Innovation,\nPrecision Systems', zh: '纺织生产创新,\n精密自动化系统', ja: '繊維生産の革新、\n精密自動化システム', de: 'Textilinnovation,\nPräzisionssysteme' },
+  heroTitle5: { ko: '식품 공정의 신뢰,\n완벽한 자동화 구축', en: 'Reliable Food Process,\nPerfect Automation', zh: '食品加工信任,\n完美自动化构建', ja: '食品工程의 信頼、\n完璧な自動化構築', de: 'Lebensmittelprozess,\nPerfekte Automatisierung' },
+  
+  heroDesc1: { ko: '극동계전은 최첨단 PLC, HMI, SCADA 솔루션을 통해 고효율 자동 제어 시스템을 구축합니다.', en: 'KUKDONG SYSTEM builds high-efficiency automated control systems.', zh: '极东计电通过尖端的PLC解决方案构建高效自动化控制系统。', ja: '極東計電は最先端のPLCソリューションを通じて制御システムを構築します。', de: 'KUKDONG SYSTEM baut hocheffiziente automatische Steuerungssysteme.' },
+  heroDesc2: { ko: '다양한 산업 현장의 니즈에 맞춘 정확하고 안정적인 자동제어 시스템.', en: 'Accurate and stable automated control systems tailored to various needs.', zh: '精确且稳定的自动化控制系统。', ja: '正確で安定した自動制御システム。', de: 'Genaue und stabile automatische Steuerungssysteme.' },
+  heroDesc3: { ko: '실시간 모니터링 및 원격 제어로 공장의 다운타임을 최소화합니다.', en: 'Minimize factory downtime with real-time monitoring and remote control.', zh: '通过实时监控，将工厂停机时间降至最低。', ja: 'リアルタイム監視で工場のダウンタイムを最小限に。', de: 'Minimieren Sie Werk-Ausfallzeiten durch Echtzeit-Überwachung.' },
+  heroDesc4: { ko: '원단 코팅기, 리락싱, 비터, 텐터 필터청소기 등 섬유 생산 전 공정에 최적화된 제어 솔루션을 제공합니다.', en: 'Optimized control for textile processes: coating, relaxing, beater, and filter cleaning.', zh: '针对涂层、松弛和过滤器清洁等纺织工艺优化的控制系统', ja: 'コーティング、リラクシング、ビーターなど繊維生産工程に最適な制御ソリューションを提供。', de: 'Optimierte Steuerungslösungen für Textilprozesse.' },
+  heroDesc5: { ko: '소스 터널냉각기, 2차살균기, 케첩냉각기, 컨베어, 믹서 등 위생과 효율을 동시에 잡는 스마트 식품 라인을 구축합니다.', en: 'Building HACCP smart food lines: coolers, sterilizers, and mixers.', zh: '构建符合HACCP标准的智能食品生产线', ja: '冷却機、殺菌機、ミキサー等、衛生と効率を両立する食品ラインを構築。', de: 'HACCP-konforme intelligente Lebensmittellinien.' },
+  
   heroBtnPortfolio: { ko: '포트폴리오 보기', en: 'View Portfolio', zh: '查看成功案例', ja: 'ポートフォリオを見る', de: 'Portfolio ansehen' },
   heroBtnContact: { ko: '문의 상담', en: 'Contact Us', zh: '咨询我们', ja: 'お問い合わせ', de: 'Kontaktieren Sie uns' },
-
-  aboutTitle1: { ko: 'KUKDONG SYSTEM', en: 'KUKDONG SYSTEM', zh: 'KUKDONG SYSTEM', ja: 'KUKDONG SYSTEM', de: 'KUKDONG SYSTEM' },
-  aboutTitle2: { 
-    ko: '극동계전은 안정적인 혁신 자동화 파트너입니다', 
-    en: 'KUKDONG SYSTEM is your stable and innovative automation partner',
-    zh: '极东计电是您稳定创신의 自动化合作伙伴',
-    ja: '極東計電は安定して革新的な自動化パートナーです',
-    de: 'KUKDONG SYSTEM ist Ihr stabiler und bewährter Automatisierungspartner'
-  },
-  aboutDesc1: { 
-    ko: '15년 이상의 풍부한 산업 현장 경험과 노하우를 바탕으로, 단순한 기계 제어를 넘어 전체 공장의 운영 효율성을 높이는 지능형 통합 자동화 솔루션을 제공합니다.', 
-    en: 'Based on over 15 years of rich industrial field experience and know-how, we provide an intelligent integrated automation solution that increases operational efficiency of the entire factory, going beyond simple machine control.',
-    zh: '基于超过15年的丰富工业现场经验与诀窍，我们提供超越简单机器控制的智能集成自动化解决方案，以提升整个工厂的运营效率。',
-    ja: '15年以上の豊富な産業現場の経験とノウハウに基づき、単なる機械制御を超えて工場全体の運営効率を高めるインテリジェントな統合自動化ソリューションを提供します。',
-    de: 'Basierend auf über 15 Jahren Erfahrung in der Industrie bieten wir eine intelligente, integrierte Automatisierungslösung, die die Betriebseffizienz der gesamten Fabrik weit über die einfache Maschinensteuerung hinaus steigert.'
-  },
-  aboutDesc2: { 
-    ko: 'PLC, HMI 프로그래밍부터 SCADA 통합 감시, 인버터 및 서보 제어, 그리고 제어반(Panel) 설계 및 제작까지 자동화에 필요한 모든 A to Z를 수행합니다. 고객의 환경을 분석하여 최적의 부품 선정과 완벽한 시스템을 구축하는 것이 우리의 목표입니다.', 
-    en: 'From PLC and HMI programming to SCADA integrated monitoring, inverter and servo control, and control panel design and production, we handle everything A to Z in automation. Our goal is to analyze your environment to select the optimal components and build perfect systems.',
-    zh: '从PLC、HMI编程到SCADA综合监控、变频器及伺服控制，再到控制柜设计制作，我们包揽自动化的所有环节。',
-    ja: 'PLC、HMIプログラミングからSCADA統合監視、インバータ・サーボ制御、さらに制御盤の設計と製作まで自動化のA to Zを全て遂行します。',
-    de: 'Von der PLC- und HMI-Programmierung bis hin zur SCADA-Überwachung, Antriebstechnik sowie dem Design von Bedienfeldern übernehmen wir alles in der Automatisierung.'
-  },
-
-  aboutPoint1: { ko: '전문적인 엔지니어링', en: 'Professional Engineering', zh: '专业的工程技术', ja: '専門的なエンジニアリング', de: 'Professionelle Ingenieurskunst' },
-  aboutPoint2: { ko: '맞춤형 솔루션 제공', en: 'Customized Solutions', zh: '定制化解决方案', ja: 'カスタマイ즈 솔루션 제공', de: 'Maßgeschneiderte Lösungen' },
-  aboutPoint3: { ko: '철저한 사후 관리', en: 'Thorough Follow-up', zh: '周到的售后服务', ja: '徹底したアフターケア', de: 'Gründliche Nachbetreuung' },
-
+  
   fieldsTitle: { ko: '주요 기술 분야', en: 'Core Tech Fields', zh: '核心技术领域', ja: '主要技術分野', de: 'Kernkompetenzen' },
-  fieldsSubTitle: { ko: '다양한 산업 현장에서 검증된 최고의 자동 제어 기술력', en: 'Proven excellence in automated control systems across various industries', zh: '在各行各业经过验证的顶尖自动化控制技术实力', ja: '多様な産業現場で検証された最高の自動制御技術力', de: 'Bewährte Spitzenleistung in Branchen' },
-
+  fieldsSubTitle: { ko: '다양한 산업 현장에서 검증된 최고의 자동 제어 기술력', en: 'Proven excellence in automated control systems across various industries', zh: '在各行各业经过验证的顶尖技术', ja: '検証された最高の自動制御技術力', de: 'Bewährte Spitzenleistung in Branchen' },
+  
   field1: { ko: 'PLC 프로그래밍', en: 'PLC Programming', zh: 'PLC编程', ja: 'PLCプログラミング', de: 'SPS-Programmierung' },
-  field1Desc: { ko: 'LS, Mitsubishi, Omron, Siemens 등 다양한 제조사의 PLC 스펙에 맞춘 최적화된 로직 설계 및 코딩', en: 'Optimized logic design and coding tailored to various manufacturers like LS, Mitsubishi, Omron, Siemens', zh: '针对LS、三菱、欧姆龙、西门子等品牌的PLC进行优化的逻辑设计和编码', ja: 'LS、三菱、オムロン、シーメンス等多様なPLCにあわせた最適化ロジック設計', de: 'Optimum Logik und SPS-Entwicklung für Marken wie Siemens, Mitsubishi, LS etc.' },
-  field2: { ko: 'HMI / 터치 패널 UI', en: 'HMI / Touch UI', zh: 'HMI / 触摸面板UI', ja: 'HMI/タッチパネルUI', de: 'HMI / Touch UI' },
-  field2Desc: { ko: '조작이 직관적이고 현장 상황을 한눈에 파악할 수 있는 사용자 친화적 그래픽 인터페이스 화면 작화', en: 'User-friendly GUI design for intuitive operation and clear visibility of the factory floor', zh: '操作直观、一目了然的现场图形界面设计', ja: '操作が直感的で現場状況を一目で把握できるGUI設計', de: 'User-friendly GUI-Design für eine intuitive Bedienung' },
-  field3: { ko: 'SCADA 시스템 감시', en: 'SCADA Systems', zh: 'SCADA 监控系统', ja: 'SCADAシステム監視', de: 'SCADA-Systeme' },
-  field3Desc: { ko: '공장 전체의 데이터를 실시간으로 수집, 모니터링하고 제어하는 상위 통합 관제 솔루션 구축', en: 'Real-time data collection, monitoring, and upper-level integrated control solutions for the whole plant', zh: '构建实时采集、监控并控制全厂数据的高级集成管制解决方案', ja: '工場全体のデータをリアルタイムに収集・自動監視する上位制御システムの構築', de: 'Datenerfassung und integrierte Steuerung des gesamten Werks' },
-  field4: { ko: '인버터 & 서보 제어', en: 'Inverter & Servo', zh: '变频器与伺服控制', ja: 'インバータ＆サーボ制御', de: 'Frequenzumrichter & Servo' },
-  field4Desc: { ko: '모터의 정밀한 속도, 토크, 위치 제어로 생산 정밀도를 높이고 에너지 효율을 개선하는 드라이브 제어', en: 'Precise drive control for speed, torque, and position, improving precision and energy efficiency', zh: '对电机进行精密的速度、扭矩及位置控制，提高生产精度', ja: 'モータの精密な速度、トルク、位置制御により生産精度を高める駆動制御', de: 'Präzise Antriebssteuerung zur Steigerung der Präzision' },
-  field5: { ko: '온도 및 공조 제어', en: 'HVAC Control', zh: '温度与HVAC控制', ja: '温度及び空調制御', de: 'Klima- und Temperaturregelung' },
-  field5Desc: { ko: '클린룸, 항온항습기, 냉동창고 등 정밀한 온도 및 습도 유지를 위한 센서 동기화 PI/PID 제어', en: 'Sensor-synchronized PI/PID control for cleanrooms, specific humidity spaces, and more', zh: '针对洁净室等的恒温恒湿环境提供精准的PID同步控制', ja: 'クリーンルーム等の精密な温度・湿度維持のためのセンサー同期PID制御', de: 'Sensor-synchronisierte PID-Regelung für Reinräume' },
-  field6: { ko: '제어반(Panel) 제작', en: 'Control Panels', zh: '控制柜制造', ja: '制御盤の製作', de: 'Schaltschrankbau' },
-  field6Desc: { ko: '안전성, 발열, 노이즈를 고려한 체계적인 도면 설계 및 전기 판넬(MCC/PLC반) 조립 제작', en: 'Systematic drawing design and electrical panel assembly accounting for safety, heat, and noise', zh: '电气控制柜（MCC/PLC盘）装配制造', ja: '安全性、発熱、ノイズを考慮した体系的な図面設計と電気パネル製作', de: 'Sorgfältige Konstruktion und Fertigung von Schaltschränken' },
-
+  field1Desc: { ko: 'LS, Mitsubishi, Siemens 등 최적화된 로직 설계 및 코딩', en: 'Optimized logic design for Major PLC brands.', zh: '针对主流PLC品牌的逻辑设计。', ja: '主要ブランドPLCに最適化されたロジック設計。', de: 'SPS-Optimierung für Marken.' },
+  field2: { ko: 'HMI / 터치 패널 UI', en: 'HMI / Touch UI', zh: 'HMI / 触摸面板UI', ja: 'HMI / タッチパネルUI', de: 'HMI / Touch UI' },
+  field2Desc: { ko: '조작이 직관적이고 현장 상황을 한눈에 파악할 수 있는 그래픽 작화', en: 'User-friendly GUI design for clear factory visibility.', zh: '操作直观的现场图形界面设计。', ja: '操作が直感的なグラフィック作画。', de: 'User-friendly GUI-Design.' },
+  field3: { ko: 'SCADA 시스템 감시', en: 'SCADA Systems', zh: 'SCADA 监控系统', ja: 'SCADA監視', de: 'SCADA-Systeme' },
+  field3Desc: { ko: '공장 전체 데이터를 실시간으로 모니터링하는 통합 관제 솔루션', en: 'Upper-level integrated control solutions for the whole plant.', zh: '集成管制解决方案。', ja: '統合監視ソリューション。', de: 'Integrierte Steuerung des gesamten Werks.' },
+  field4: { ko: '인버터 & 서보 제어', en: 'Inverter & Servo', zh: '变频器与伺服控制', ja: '인버터 ＆ 서보 제어', de: 'Frequenzumrichter & Servo' },
+  field4Desc: { ko: '정밀한 속도 및 위치 제어로 생산 정밀도를 높임.', en: 'Precise drive control improving precision.', zh: '精密的速度及位置控制。', ja: '精密な速度および位置制御。', de: 'Präzise Antriebssteuerung.' },
   fieldFood: { ko: '식품기계 자동화', en: 'Food Processing', zh: '食品机械自动化', ja: '食品機械自動化', de: 'Lebensmittelverarbeitung' },
-  fieldFoodDesc: { ko: 'HACCP 기준을 충족하는 위생적인 자동화 라인 및 식품 포장/충진 제어 솔루션.', en: 'Hygienic automated lines and packing control solutions meeting HACCP standards.', zh: '满足HACCP标准的卫生自动生产线', ja: 'HACCP基準を満たす衛生的な自動化ライン', de: 'Hygienische automatische Anlagen gemäß HACCP-Standards.' },
-  fieldTextile: { ko: '섬유기계 자동화', en: 'Textile Automation', zh: '纺织机械自动化', ja: '繊維機械自動화', de: 'Textilautomatisierung' },
-  fieldTextileDesc: { ko: '연사기, 직기 등 섬유 생산 설비의 정밀 속도 제어 및 고품질 원단 생산 시스템.', en: 'Precision speed control for textile equipment ensuring high fabric quality.', zh: '纺织生产设备进行精确调速', ja: '繊維生産設備の精密速度制御', de: 'Präzise Drehzahlregelung für Textilmaschinen' },
+  fieldFoodDesc: { ko: '위생적인 자동화 라인 및 식품 포장 제어 솔루션.', en: 'Hygienic automated lines meeting standards.', zh: '满足卫生标准的自动化线。', ja: '衛生的な自動化ライン。', de: 'Hygienische automatische Anlagen.' },
+  fieldTextile: { ko: '섬유기계 자동화', en: 'Textile Automation', zh: '纺织机械自动化', ja: '繊維機械自動化', de: 'Textilautomatisierung' },
+  fieldTextileDesc: { ko: '섬유 생산 설비의 정격속도 제어 및 품질 유지 시스템.', en: 'Speed control for textile equipment.', zh: '纺织设备的工程控制。', ja: '繊維生産設備の速度制御。', de: 'Drehzahlregelung für Textilmaschinen.' },
   fieldLogistics: { ko: '스마트 물류 제어', en: 'Smart Logistics', zh: '智能物流控制', ja: 'スマート物流制御', de: 'Smarte Logistik' },
-  fieldLogisticsDesc: { ko: '컨베이어 벨트 통합 제어 및 자동 분류 시스템으로 물류 효율을 극대화합니다.', en: 'Maximize logistics efficiency with automated sorting systems.', zh: '输送带综合控制', ja: 'コンベアベルトの統合制御', de: 'Maximierung der Logistikeffizienz.' },
+  fieldLogisticsDesc: { ko: '컨베이어 통합 제어 및 자동 분류 시스템 구축.', en: 'Automated sorting and conveyor systems.', zh: '输送带联动与自动化。', ja: 'コンベア統合制御構築。', de: 'Automatisierte Sortiersysteme.' },
 
   portfolioTitle: { ko: '구축 사례 / 포트폴리오', en: 'Showcase & Portfolio', zh: '项目案例', ja: '構築事例 / ポートフォリオ', de: 'Projekte & Portfolio' },
-  portfolioSubTitle: { ko: '기술력과 신뢰로 일궈낸 실적 리스트입니다.', en: 'A track record built on technology and trust.', zh: '以技术实力和信任共筑的业绩清单。', ja: '技術力と信頼で築き上げた実績リストです。', de: 'Eine auf Technologie und Vertrauen basierende Erfolgsbilanz.' },
-  portfolioMore: { ko: '더 많은 포트폴리오 준비중...', en: 'More portfolios coming soon...', zh: '更多案例准备中...', ja: 'その他のポートフォリオは準備中...', de: 'Weitere Projekte folgen bald...' },
-
-  demoTitle: { ko: '자동화 솔루션 시연 영상', en: 'Automation Solutions Demo', zh: '自动化解决方案演示', ja: '自動化ソリューションのデモ動画', de: 'Automation Lösungs-Demo' },
-  demoSubTitle: { ko: '극동계전이 구축한 정밀 제어 시스템의 실제 가동 모습입니다.', en: 'Actual operation footage of the precision control systems.', zh: '极东计电构建的精密控制系统', ja: '極東計電が構築した精密制御システムの実際の稼働風景', de: 'Aktuelle Betriebsaufnahmen der Präzisionssteuerungssysteme.' },
-  demoListTitle: { ko: '시연 영상 목록', en: 'Demo Videos List', zh: '演示视频列表', ja: 'デモ動画リスト', de: 'Liste der Demo-Videos' },
-  demoNoVideo: { ko: '등록된 영상이 없습니다.', en: 'No registered videos.', zh: '没有相关视频。', ja: '登録された動画がありません。', de: 'Keine Videos registriert.' },
-  demoBtn: { ko: '솔루션 상담받기', en: 'Get Solutions Consult', zh: '申请解决方案咨询', ja: 'ソリューション相談を受ける', de: 'Lösungsberatung erhalten' },
-
-  contactTitle: { ko: '프로젝트 문의', en: 'Project Inquiry', zh: '项目咨询', ja: 'プロジェクトのお問い合わせ', de: 'Projektanfrage' },
-  contactDesc: { 
-    ko: '극동계전이 최적의 솔루션을 제안해 드립니다. 아래 정보를 확인하시고 언제든 편하게 문의해 주시기 바랍니다.', 
-    en: 'KUKDONG SYSTEM will propose the optimal solution.',
-    zh: '极东计电为您提供最佳解决方案。',
-    ja: '極東計電が最適なソリューションをご提案します。',
-    de: 'KUKDONG SYSTEM unterbreitet Ihnen die optimale Lösung.'
-  },
-  trustSubTitle: { ko: '고객이 신뢰하는 1%의 프리미엄 자동화 기술력', en: 'Premium Automation Engineering Trusted by 1%', zh: '顾客信赖的1%高级自动化技术力', ja: '顧客が信頼する1%のプレミアム自動化技術力', de: 'Premium-Automatisierungstechnik' },
-  contactWhyTitle: { ko: '왜 극동계전을 선택해야 할까요?', en: 'Why Choose KUKDONG SYSTEM?', zh: '为什么选择极东计电？', ja: 'なぜ極東計電を選ぶべきか？', de: 'Warum KUKDONG SYSTEM wählen?' },
-  contactWhy1: { ko: '15년 이상의 현장 실무 경험', en: '15+ Years of Field Experience', zh: '15年以上的现场经验', ja: '15年以上の現場実務経験', de: '15+ Jahre Praxiserfahrung' },
-  contactWhy2: { ko: '초기 설계부터 시운전까지 원스톱 서비스', en: 'One-Stop Service from Design to Commissioning', zh: '从初期设计到试运行的一站式服务', ja: '初期設計から試運転までのワンストップサービス', de: 'One-Stop-Service' },
-  contactWhy3: { ko: '생산성을 150% 이상 향상시킨 래퍼런스 보유', en: 'Proven References Enhancing Productivity by 150%', zh: '提升生产力150%', ja: '生産性を150%以上向上させた実績', de: 'Referenzen zur Steigerung der Produktivität' },
-  contactWhy4: { ko: '문제 발생 전 예방하는 철저한 유지보수', en: 'Preventative Maintenance System', zh: '防患于未然的', ja: '徹底した保守管理', de: 'Präventives Wartungssystem' },
-
-  trust1Title: { ko: '15년 이상의 현장 실무 경험', en: '15+ Years Field Experience', zh: '15年以上的现场实际经验', ja: '15年以上の現場実務経験', de: '15+ Jahre Praxiserfahrung' },
-  trust1Desc: { ko: '수백 개가 넘는 설비 구축 노하우와 숙련된 기술력을 보유하고 있습니다.', en: 'Possessing expertise from building over hundreds of systems.', zh: '拥有数百个设备的构建诀窍', ja: '数百件以上の設備構築ノウハウを保有しています。', de: 'Wir verfügen über das Know-how aus dem Bau von Anlagen.' },
+  portfolioSubTitle: { ko: '기술력과 신뢰로 일궈낸 실적 리스트입니다.', en: 'A track record built on technology and trust.', zh: '以技术实力和信任取得의 业绩清单', ja: '実績リストです', de: 'Eine auf Technologie und Vertrauen basierende Erfolgsbilanz.' },
   
-  trust2Title: { ko: '24시간 긴급 대응 유지보수', en: '24/7 Emergency Maintenance', zh: '24小时紧急应对及维护', ja: '24時間緊急対応維持補修', de: '24/7 Notfallwartung' },
-  trust2Desc: { ko: '고장 발생 시 즉각적인 기술 지원으로 공정 다운타임을 최소화합니다.', en: 'Minimizing process downtime through immediate tech support.', zh: '发生故障时提供即时技术支持', ja: '故障発生時に即座に技術支援を行い', de: 'Minimierung von Prozessausfällen.' },
+  demoTitle: { ko: '솔루션 시연 영상', en: 'Automation Solutions Demo', zh: '自动化解决方案演示', ja: 'ソリューション動画', de: 'Automation Lösungs-Demo' },
+  demoSubTitle: { ko: '극동계전이 구축한 정밀 제어 시스템의 실제 가동 모습입니다.', en: 'Actual operation footage of the systems.', zh: '系统的实际运行画面。', ja: '実際の稼働の様子です。', de: 'Betriebsaufnahmen.' },
+  demoListTitle: { ko: '시연 영상 목록', en: 'Demo Videos List', zh: '演示视频列表', ja: 'デ모動画リスト', de: 'Liste der Demo-Videos' },
+  demoNoVideo: { ko: '등록된 영상이 없습니다.', en: 'No registered videos.', zh: '没有相关视频', ja: '動画はありません。', de: 'Keine Videos registriert.' },
   
+  contactTitle: { ko: '프로젝트 문의', en: 'Project Inquiry', zh: '项目咨询', ja: 'お問い合わせ', de: 'Projectanfrage' },
+  contactDesc: { ko: '극동계전이 최적의 솔루션을 제안해 드립니다. 아래 정보를 확인하시고 언제든 편하게 문의해 주시기 바랍니다.', en: 'KUKDONG SYSTEM will propose the optimal solution.', zh: '极东计电为您提供最佳解决方案。', ja: '最適のソリューションを提案します。', de: 'KUKDONG SYSTEM unterbreitet Ihnen die optimale Lösung.' },
+  
+  trustSubTitle: { ko: 'SINCE 1987, 2대째 가업을 이어가는 1%의 프리미엄 자동화 기술력', en: 'SINCE 1987, 2nd Gen Family Business Trusted by 1% in Premium Automation', zh: '始于1987，传承两代的高级自动化技术品牌', ja: 'SINCE 1987、2代にわたって受け継がれる1%のプレミアム自動化技術', de: 'SEIT 1987, ein Familienunternehmen in 2. Generation für Premium-Automatisierung' },
+  contactWhyTitle: { ko: '왜 극동계전을 선택해야 할까요?', en: 'Why Choose KUKDONG SYSTEM?', zh: '为什么选择极东计电？', ja: 'なぜ極東計電を選ぶのか？', de: 'Warum KUKDONG SYSTEM wählen?' },
+  
+  trust1Title: { ko: '15년 이상의 현장 실무 경험', en: '15+ Years Field Experience', zh: '15年以上的现场实际经验', ja: '15年以上の実務経験', de: '15+ Jahre Praxiserfahrung' },
+  trust1Desc: { ko: '수백 개가 넘는 설비 구축 노하우와 숙련된 기술력을 보유하고 있습니다.', en: 'Possessing expertise from hundreds of systems.', zh: '拥有数百个设备的构建诀窍', ja: '数百の設備構築ノウハウ。', de: 'Wir verfügen über das Know-how.' },
+  trust2Title: { ko: '24시간 긴급 대응 유지보수', en: '24/7 Emergency Maintenance', zh: '24小时紧急应对', ja: '24時間緊急対応', de: '24/7 Notfallwartung' },
+  trust2Desc: { ko: '고장 발생 시 즉각적인 기술 지원으로 공정 다운타임을 최소화합니다.', en: 'Minimizing downtime through immediate support.', zh: '故障时提供即时支持', ja: '即時サポートでダウンタイム最小化。', de: 'Minimierung von Prozessausfällen.' },
   trust3Title: { ko: '합리적인 설계 및 시공 비용', en: 'Reasonable Cost Structuring', zh: '合理的设计与施工费用', ja: '合理的な設計・施工費用', de: 'Faire Gestaltungs- und Baukosten' },
-  trust3Desc: { ko: '불필요한 비용을 줄이고 최적의 부품 선정으로 원가 절감을 실현합니다.', en: 'Achieving cost savings by selecting optimized parts.', zh: '减少不必要的支出', ja: '不要な費用を削減し', de: 'Kostenreduzierung durch Auswahl optimaler Teile.' },
-
-  trust4Title: { ko: '최첨단 맞춤형 솔루션 제공', en: 'Cutting-edge Custom Solutions', zh: '提供尖端定制化解决方案', ja: '最先端カスタマイ즈 솔루션 제공', de: 'Moderne maßgeschneiderte Lösungen' },
-  trust4Desc: { ko: '고객사의 산업 환경에 가장 적합한 1:1 맞춤형 통합 제어 시스템을 설계합니다.', en: 'Designing a 1:1 tailor-made integrated control system.', zh: '设计适合客户', ja: 'お客様の産業環境に適合した', de: 'Entwicklung eines maßgeschneiderten Steuerungssystems.' },
-
-  trust5Title: { ko: '글로벌 하드웨어 완벽 대응', en: 'Global HW Compatibility', zh: '全面兼容全球硬件', ja: 'グローバルハードウェア完全対応', de: 'Globale Hardware-Kompatibilität' },
-  trust5Desc: { ko: 'LS, Mitsubishi, Siemens 등 국내외 주요 브랜드 PLC와의 자유로운 연동이 가능합니다.', en: 'Seamless integration with major PLC brands.', zh: '可与主要品牌PLC无缝连接', ja: '主要PLCブランドと柔軟に連동 가능합니다.', de: 'Integration mit wichtigen PLC-Marken.' },
-
-  trust6Title: { ko: '스마트 팩토리 인프라 구축', en: 'Smart Factory Infrastructure', zh: '智能工厂基础设施构建', ja: 'スマートファクトリーインフラ構築', de: 'Infrastruktur für die Smart Factory' },
-  trust6Desc: { ko: '실시간 모니터링 SCADA 및 데이터 체계화를 통해 지능형 공장을 실현해 드립니다.', en: 'Realizing intelligent factories through real-time SCADA.', zh: '通过实时监控', ja: 'リアルタイム監視を通じて', de: 'Aufbau intelligenter Fabriken.' },
+  trust3Desc: { ko: '불필요한 비용을 줄이고 최적의 부품 선정으로 원가 절감을 실현합니다.', en: 'Cost savings by selecting optimized parts.', zh: '减少不必要的支出', ja: '最適部品選定でコスト削減。', de: 'Kostenreduzierung.' },
+  trust4Title: { ko: '최첨단 맞춤형 솔루션 제공', en: 'Cutting-edge Custom Solutions', zh: '提供尖端定制方案', ja: '最先端カスタムソリューション', de: 'Maßgeschneiderte Lösungen' },
+  trust4Desc: { ko: '산업 환경에 가장 적합한 1:1 맞춤형 통합 제어 시스템을 설계합니다.', en: 'Designing a 1:1 tailor-made integrated control system.', zh: '设计适合客户环境的系统', ja: '1:1の統合制御システム設計。', de: 'Maßgeschneiderte Steuerungssysteme.' },
+  trustBadge: { ko: 'SINCE 1987 · 2대째 가업', en: 'SINCE 1987 · 2nd Gen', zh: '始于1987 · 接棒二代', ja: 'SINCE 1987 · 2代目', de: 'SEIT 1987 · 2. Generation' },
 
   contactProjectConsultTitle: { ko: '프로젝트 상담', en: 'Project Consultation', zh: '项目咨询', ja: 'プロジェクト相談', de: 'Projektberatung' },
-  contactTechConsult: { ko: '기술 상담 및 견적', en: 'Tech Consult & Quotes', zh: '技术咨询与报价', ja: '技術相談及びお見積り', de: 'Technische Beratung & Angebote' },
+  contactTechConsult: { ko: '기술 상담 및 견적', en: 'Tech Consult & Quotes', zh: '技术咨询与报价', ja: '技術相談および見積り', de: 'Angebote' },
   contactDirectFax: { ko: '직통 팩스(FAX)', en: 'Direct FAX', zh: '直通传真(FAX)', ja: '直通FAX', de: 'Direktes FAX' },
   contactOfficialEmail: { ko: '대표 이메일', en: 'Official Email', zh: '代表邮箱', ja: '代表メール', de: 'Offizielle E-Mail' },
-  contactLiveConsultBtn: { ko: '지금 실시간 상담하기', en: 'Get Live Consultation', zh: '现在进行实时咨询', ja: '今すぐリアルタイム相談する', de: 'Jetzt live beraten lassen' },
-  contactDirectionsTitle: { ko: '오시는 길', en: 'Directions & Map', zh: '路线指南', ja: 'アクセス・地図', de: 'Wegbeschreibung & Karte' },
+  contactLiveConsultBtn: { ko: '지금 실시간 상담하기', en: 'Get Live Consultation', zh: '现在进行实时咨询', ja: '今すぐ相談する', de: 'Jetzt live beraten lassen' },
+  contactDirectionsTitle: { ko: '오시는 길', en: 'Directions & Map', zh: '路线指南', ja: 'アクセス', de: 'Wegbeschreibung' },
+  mapAddress: { ko: '📍 대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호 (극동계전)', en: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '📍 大韩民国 京畿道 安山市 檀园区 产团路 326 安山流通商街 19栋 104号 (极东计电)', ja: '📍 大韓民国 京畿道 安山市 檀園区 産団路 326 安山流通商店街 19棟 104号 (極東計電)', de: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
+  mapNaver: { ko: '네이버 지도', en: 'Naver Map', zh: 'Naver 地图', ja: 'NAVER地図', de: 'Naver Karte' },
+  mapKakao: { ko: '카카오 맵', en: 'Kakao Map', zh: 'Kakao 地图', ja: 'Kakaoマップ', de: 'Kakao Karte' },
+  mapGoogle: { ko: '구글 지도', en: 'Google Maps', zh: '谷歌地图', ja: 'Googleマップ', de: 'Google Maps' },
 
-  mapAddress: {
-    ko: '📍 경기도 안산시 산단로 326 안산유통상가 19동 104호 (극동계전)',
-    en: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si',
-    zh: '📍 京畿道安山市檀园区产团路326 安山流通商街19栋104号 (极东计电)',
-    ja: '📍 경기도 안산시 산단로 326 안산유통상가 19동 104호 (極東計電)',
-    de: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si'
-  },
-  mapNaver: { ko: '네이버 지도', en: 'Naver Map', zh: 'Naver 地图', ja: 'Naver マップ', de: 'Naver Karte' },
-  mapKakao: { ko: '카카오 맵', en: 'Kakao Map', zh: 'Kakao 地图', ja: 'Kakao マップ', de: 'Kakao Karte' },
-  mapGoogle: { ko: '구글 지도', en: 'Google Maps', zh: '谷歌地图', ja: 'Google マップ', de: 'Google Maps' },
-
-  modalTechStack: { ko: '기술 스택 및 세부 사항', en: 'Tech Stack & Details', zh: '技术栈及详细信息', ja: '技術スタックおよび詳細', de: 'Tech-Stack & Details' },
-  modalTech1: { ko: '자동 제어 알고리즘 설계 및 최적화', en: 'Automatic Control Algorithm Design & Optimization', zh: '自动控制算法设计与优化', ja: '自動制御アルゴリズムの設計と最適化', de: 'Design und Optimierung von Algorithmen' },
-  modalTech2: { ko: 'PLC/HMI 기반 실시간 모니터링 시스템', en: 'PLC/HMI-based Real-time Monitoring System', zh: '基于PLC/HMI的实时监控系统', ja: 'PLC/HMI基盤のリアルタイム監視システム', de: 'Echtzeit-Überwachungssystem' },
-  modalTech3: { ko: '대시보드 및 지능형 알람 솔루션', en: 'Dashboard and Intelligent Alarm Solutions', zh: '仪表板与智能报警解决方案', ja: 'ダッシュボードとインテリジェントなアラー厶', de: 'Dashboard- und intelligente Alarmlösungen' },
-  modalTech4: { ko: '시스템 통합 및 시운전 완료', en: 'System Integration and Commissioning Completed', zh: '系统集成及试运行完成', ja: 'システム統合および試運転完了', de: 'Systemintegration abgeschlossen' },
-  modalCloseBtn: { ko: '프로젝트 닫기', en: 'Close Project', zh: '关闭项目', ja: 'プロジェクトを閉じる', de: 'Projekt schließen' },
-  modalConsultBtn: { ko: '구축 상담하기', en: 'Consult Us', zh: '项目构建咨询', ja: '構築について相談する', de: 'Kontaktieren Sie uns' },
+  modalTechStack: { ko: '기술 스택 및 세부 사항', en: 'Tech Stack & Details', zh: '技术栈及详细信息', ja: '技術スペック', de: 'Tech-Stack' },
+  modalTech1: { ko: '자동 제어 알고리즘 설계 및 최적화', en: 'Automatic Control Algorithm Optimization', zh: '算法设计', ja: '制御AI最適化', de: 'Algorithmenfoptimierung' },
+  modalTech2: { ko: 'PLC/HMI 기반 실시간 모니터링', en: 'PLC/HMI Real-time Monitoring', zh: '实时监控', ja: 'リアルタイム監視', de: 'Echtzeit-Überwachung' },
+  modalTech3: { ko: '지능형 알람 솔루션', en: 'Intelligent Alarm Solution', zh: '报警解决方案', ja: 'インテリジェント警告', de: 'Alarmlösungen' },
+  modalTech4: { ko: '시스템 통합 및 시운전 완료', en: 'System Integration Completed', zh: '系统集成', ja: 'システム統合完了', de: 'Systemintegration' },
+  modalCloseBtn: { ko: '프로젝트 닫기', en: 'Close Project', zh: '关闭项目', ja: '閉じる', de: 'Schließen' },
+  modalConsultBtn: { ko: '구축 상담하기', en: 'Consult Us', zh: '项目咨询', ja: '相談する', de: 'Kontakt' },
+  explore: { ko: '둘러보기', en: 'Explore', zh: '探索', ja: '探検', de: 'Erkunden' },
+  nowPlaying: { ko: '현재 재생 중', en: 'Now Playing', zh: '正在播放', ja: '再生中', de: 'Wiedergabe' },
 };
 
 export function t(key: string, lang: Language) {

@@ -20,6 +20,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const savedLang = localStorage.getItem('app-language') as Language;
     if (['ko', 'en', 'zh', 'ja', 'de'].includes(savedLang)) {
       setLanguageState(savedLang);
+      document.documentElement.lang = savedLang;
+    } else {
+      document.documentElement.lang = 'ko';
     }
     setMounted(true);
   }, []);
@@ -27,6 +30,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('app-language', lang);
+    document.documentElement.lang = lang;
   };
 
   return (

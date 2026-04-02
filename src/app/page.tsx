@@ -62,30 +62,6 @@ const Icons = {
   )
 };
 
-const staticProjects: Project[] = [
-  {
-    id: 1,
-    title: '자동차 도장 라인 PLC 제어 시스템',
-    description: 'Mitsubishi FX5U 및 GT25 HMI를 이용한 완전 자동화 공정 구축',
-    tag: '자동차/도장',
-    image: '/images/plc.png'
-  },
-  {
-    id: 2,
-    title: '반도체 웨이퍼 이송 로봇 핸들링',
-    description: '6축 다관절 로봇 및 비전 시스템 통합 정밀 제어 솔루션',
-    tag: '반도체/로봇',
-    image: '/images/robot.png',
-    images: ['/images/robot.png', '/images/plc.png', '/images/hmi.png']
-  },
-  {
-    id: 3,
-    title: '스마트 팩토리 SCADA 통합 관제',
-    description: '공장 전체 가동 현황 실시간 모니터링 및 데이터 로깅 시스템',
-    tag: 'SCADA/스마트팩토리',
-    image: '/images/hmi.png'
-  }
-];
 import { useLanguage } from '@/contexts/LanguageContext';
 import { t } from '@/lib/translations';
 
@@ -100,7 +76,7 @@ export default function Home() {
       title: t('project1Title', lang),
       description: t('project1Desc', lang),
       tag: t('project1Tag', lang),
-      image: '/images/plc.png'
+      image: '/images/hero.png'
     },
     {
       id: 2,
@@ -116,6 +92,62 @@ export default function Home() {
       description: t('project3Desc', lang),
       tag: t('project3Tag', lang),
       image: '/images/hmi.png'
+    },
+    {
+      id: 4,
+      title: t('project4Title', lang),
+      description: t('project4Desc', lang),
+      tag: t('project4Tag', lang),
+      image: '/images/textile_coating.png'
+    },
+    {
+      id: 5,
+      title: t('project5Title', lang),
+      description: t('project5Desc', lang),
+      tag: t('project5Tag', lang),
+      image: '/images/textile_relaxing.png'
+    },
+    {
+      id: 6,
+      title: t('project6Title', lang),
+      description: t('project6Desc', lang),
+      tag: t('project6Tag', lang),
+      image: '/images/textile_beater.png'
+    },
+    {
+      id: 7,
+      title: t('project7Title', lang),
+      description: t('project7Desc', lang),
+      tag: t('project7Tag', lang),
+      image: '/images/textile_filter.png'
+    },
+    {
+      id: 8,
+      title: t('project8Title', lang),
+      description: t('project8Desc', lang),
+      tag: t('project8Tag', lang),
+      image: '/images/food_cooler.png'
+    },
+    {
+      id: 9,
+      title: t('project9Title', lang),
+      description: t('project9Desc', lang),
+      tag: t('project9Tag', lang),
+      image: '/images/food_sterilizer.png'
+    },
+    {
+      id: 10,
+      title: t('project10Title', lang),
+      description: t('project10Desc', lang),
+      tag: t('project10Tag', lang),
+      image: '/images/food_conveyor.png'
+    },
+    {
+      id: 11,
+      title: t('project11Title', lang),
+      description: t('project11Desc', lang),
+      tag: t('project11Tag', lang),
+      image: '/images/food_mixer.png'
     }
   ];
 
@@ -162,6 +194,18 @@ export default function Home() {
       subtitle: t('heroSubtitle3', language),
       desc: t('heroDesc3', language),
       image: '/images/hero3.png'
+    },
+    {
+      title: t('heroTitle4', language),
+      subtitle: t('heroSubtitle4', language),
+      desc: t('heroDesc4', language),
+      image: '/images/hero4.png'
+    },
+    {
+      title: t('heroTitle5', language),
+      subtitle: t('heroSubtitle5', language),
+      desc: t('heroDesc5', language),
+      image: '/images/hero5.png'
     }
   ];
 
@@ -170,7 +214,7 @@ export default function Home() {
     if (savedProjects) {
       try {
         const dynamicProjects = JSON.parse(savedProjects);
-        setAllProjects([...dynamicProjects, ...staticProjects]);
+        setAllProjects([...dynamicProjects, ...getStaticProjects(language)]);
       } catch (e) {
         console.error('Failed to parse portfolio items', e);
       }
@@ -188,12 +232,15 @@ export default function Home() {
         console.error('Failed to parse videos', e);
       }
     }
+  }, [language]);
 
+  // Separate effect for hero slider auto-change
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroSlides.length);
     }, 8000);
     return () => clearInterval(interval);
-  }, []);
+  }, [heroSlides.length]);
 
   return (
     <main>
@@ -272,33 +319,33 @@ export default function Home() {
                 </div>
 
                 {/* Buttons moved inside for better flow especially on mobile */}
-                <div className="hero-btns" style={{ marginTop: '30px', display: 'flex', gap: '15px' }}>
+                <div className="hero-btns" style={{ marginTop: '35px', display: 'flex', alignItems: 'center', gap: '25px', flexWrap: 'wrap' }}>
                   <a href="#portfolio" className="btn-primary" style={{ padding: '14px 28px' }}>{t('heroBtnPortfolio', language)}</a>
                   <a href="#contact" className="btn-secondary" style={{ padding: '14px 28px' }}>{t('heroBtnContact', language)}</a>
+                  
+                  <div className="hero-indicators-inline">
+                    <div className="indicator-bars">
+                      {heroSlides.map((_, i) => (
+                        <button 
+                          key={i}
+                          onClick={() => setCurrentHero(i)}
+                          className={`indicator-bar ${currentHero === i ? 'active' : ''}`}
+                        />
+                      ))}
+                    </div>
+                    <span className="slide-counter">
+                      0{currentHero + 1} / 0{heroSlides.length}
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Slide Indicators - Now part of the flex flow on mobile */}
-          <div className="hero-indicators">
-            <div className="indicator-bars">
-              {heroSlides.map((_, index) => (
-                <button 
-                  key={index}
-                  onClick={() => setCurrentHero(index)}
-                  className={`indicator-bar ${currentHero === index ? 'active' : ''}`}
-                />
-              ))}
-            </div>
-            <span className="slide-counter">
-              0{currentHero + 1} / 0{heroSlides.length}
-            </span>
-          </div>
         </div>
 
         <div className="scroll-indicator" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
-          <span style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '4px', textTransform: 'uppercase', opacity: 0.6 }}>Explore</span>
+          <span style={{ fontSize: '11px', fontWeight: '800', letterSpacing: '4px', textTransform: 'uppercase', opacity: 0.6 }}>{t('explore', language)}</span>
           <div style={{ width: '1px', height: '60px', background: 'linear-gradient(to bottom, var(--accent-primary), transparent)', marginTop: '10px' }} />
         </div>
       </section>
@@ -401,7 +448,7 @@ export default function Home() {
               {/* Technical Overlay for Video */}
               {activeVideo && (
                 <div style={{ position: 'absolute', bottom: '40px', left: '40px', textAlign: 'left', pointerEvents: 'none', zIndex: 10 }}>
-                  <p style={{ fontSize: '12px', color: 'var(--accent-primary)', fontWeight: '800', letterSpacing: '2px', textTransform: 'uppercase' }}>Now Playing</p>
+                  <p style={{ fontSize: '12px', color: 'var(--accent-primary)', fontWeight: '800', letterSpacing: '2px', textTransform: 'uppercase' }}>{t('nowPlaying', language)}</p>
                   <h4 style={{ fontSize: '1.25rem' }}>{activeVideo.title}</h4>
                 </div>
               )}
@@ -471,7 +518,7 @@ export default function Home() {
       <section id="about" style={{ background: 'linear-gradient(to bottom, var(--bg-color), var(--bg-accent))' }}>
         <div className="container">
           <div className="section-header">
-            <span className="trust-badge">Unrivaled Expertise</span>
+            <span className="trust-badge">{t('trustBadge', language)}</span>
             <h2 className="text-gradient" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('contactWhyTitle', language)}</h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>{t('trustSubTitle', language)}</p>
             <div className="title-underline" />
