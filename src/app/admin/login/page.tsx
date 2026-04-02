@@ -4,8 +4,11 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Lock, User } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { t } from '@/lib/translations';
 
 export default function LoginPage() {
+  const { language } = useLanguage();
   const [userId, setUserId] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -18,7 +21,7 @@ export default function LoginPage() {
       localStorage.setItem('isAdmin', 'true');
       router.push('/admin/dashboard');
     } else {
-      setError('아이디 또는 비밀번호가 올바르지 않습니다.');
+      setError(t('adminLoginError', language));
     }
   };
 
@@ -26,8 +29,8 @@ export default function LoginPage() {
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-color)' }}>
       <div className="glass" style={{ width: '100%', maxWidth: '400px', padding: '40px' }}>
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-          <h2 style={{ fontSize: '2rem', marginBottom: '8px' }}>관리자 로그인</h2>
-          <p style={{ color: 'var(--text-muted)' }}>포트폴리오 관리를 위해 로그인하세요.</p>
+          <h2 style={{ fontSize: '2rem', marginBottom: '8px' }}>{t('adminLoginTitle', language)}</h2>
+          <p style={{ color: 'var(--text-muted)' }}>{t('adminLoginDesc', language)}</p>
         </div>
 
         <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -35,7 +38,7 @@ export default function LoginPage() {
             <User size={18} style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
             <input
               type="text"
-              placeholder="아이디"
+              placeholder={t('adminId', language)}
               value={userId}
               onChange={(e) => setUserId(e.target.value)}
               style={{
@@ -55,7 +58,7 @@ export default function LoginPage() {
             <Lock size={18} style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
             <input
               type="password"
-              placeholder="비밀번호"
+              placeholder={t('adminPw', language)}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               style={{
@@ -74,12 +77,12 @@ export default function LoginPage() {
           {error && <p style={{ color: 'var(--accent-secondary)', fontSize: '0.85rem' }}>{error}</p>}
 
           <button type="submit" className="btn-primary" style={{ width: '100%' }}>
-            로그인
+            {t('adminLoginBtn', language)}
           </button>
         </form>
 
         <Link href="/" style={{ display: 'block', textAlign: 'center', marginTop: '24px', color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.9rem' }}>
-          홈페이지로 돌아가기
+          {t('adminBackHome', language)}
         </Link>
       </div>
     </div>

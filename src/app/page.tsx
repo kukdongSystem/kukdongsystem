@@ -595,7 +595,7 @@ export default function Home() {
                   <div className="service-icon" style={{ flexShrink: 0, marginBottom: 0 }}><Icons.Mail /></div>
                   <div style={{ textAlign: 'left', minWidth: 0, flex: 1 }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('contactOfficialEmail', language)}</p>
-                    <h3 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.4rem)', fontWeight: '600', wordBreak: 'break-all' }}>soons28@naver.com</h3>
+                    <h3 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.4rem)', fontWeight: '600', wordBreak: 'break-all' }}>{t('companyEmail', language)}</h3>
                   </div>
                 </div>
               </div>

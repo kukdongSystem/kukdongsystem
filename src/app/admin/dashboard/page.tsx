@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { t } from '@/lib/translations';
 
 interface Project {
   id: number;
@@ -47,20 +49,19 @@ const Icons = {
 };
 
 export default function AdminDashboard() {
+  const { language } = useLanguage();
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const [projects, setProjects] = useState<Project[]>([]);
   const [showAddForm, setShowAddForm] = useState(false);
-  const [newProject, setNewProject] = useState({ title: '', description: '', tag: '기타 제어', image: '' });
+  const [newProject, setNewProject] = useState({ title: '', description: '', tag: 'adminPjtTag4', image: '' });
   const [isUploading, setIsUploading] = useState(false);
   const [videos, setVideos] = useState<Video[]>([]);
   const [showAddVideoForm, setShowAddVideoForm] = useState(false);
   const [newVideo, setNewVideo] = useState({ title: '', description: '', url: '' });
-  const [isSavingVideo, setIsSavingVideo] = useState(false);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setMounted((prev) => (prev ? prev : true));
+    setMounted(true);
     const isAdmin = localStorage.getItem('isAdmin');
     if (!isAdmin) {
       router.push('/admin/login');
@@ -108,7 +109,7 @@ export default function AdminDashboard() {
 
   const handleAddProject = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newProject.image) return alert('이미지를 업로드해주세요.');
+    if (!newProject.image) return alert(t('adminImgRequired', language));
 
     const updatedProjects = [
       { id: Date.now(), ...newProject },
@@ -116,12 +117,12 @@ export default function AdminDashboard() {
     ];
     setProjects(updatedProjects);
     localStorage.setItem('portfolio', JSON.stringify(updatedProjects));
-    setNewProject({ title: '', description: '', tag: '기타 제어', image: '' });
+    setNewProject({ title: '', description: '', tag: 'adminPjtTag4', image: '' });
     setShowAddForm(false);
   };
 
   const deleteProject = (id: number) => {
-    if (confirm('해당 이미지를 삭제하시겠습니까?')) {
+    if (confirm(t('adminDeleteConfirm', language))) {
       const updatedProjects = projects.filter(p => p.id !== id);
       setProjects(updatedProjects);
       localStorage.setItem('portfolio', JSON.stringify(updatedProjects));
@@ -141,7 +142,7 @@ export default function AdminDashboard() {
   };
 
   const deleteVideo = (id: number) => {
-    if (confirm('해당 동영상을 삭제하시겠습니까?')) {
+    if (confirm(t('adminDeleteConfirm', language))) {
       const updatedVideos = videos.filter(v => v.id !== id);
       setVideos(updatedVideos);
       localStorage.setItem('demo_videos', JSON.stringify(updatedVideos));
@@ -159,14 +160,14 @@ export default function AdminDashboard() {
                 <span style={{ fontWeight: '400', fontSize: '11px', color: 'var(--text-muted)' }}>SYSTEM</span>
             </div>
             <span style={{ margin: '0 10px', color: 'var(--glass-border)' }}>|</span>
-            <h2 style={{ fontSize: '1rem' }}>대시보드</h2>
+            <h2 style={{ fontSize: '1rem' }}>{t('adminDashboard', language)}</h2>
           </div>
           <div style={{ display: 'flex', gap: '16px' }}>
             <button className="btn-secondary" style={{ padding: '8px 16px', fontSize: '14px' }} onClick={() => router.push('/')}>
-              홈으로 가기
+              {t('adminGoHome', language)}
             </button>
             <button className="btn-primary" style={{ padding: '8px 16px', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '6px' }} onClick={handleLogout}>
-              <Icons.LogOut /> 로그아웃
+              <Icons.LogOut /> {t('adminLogout', language)}
             </button>
           </div>
         </div>
@@ -177,11 +178,11 @@ export default function AdminDashboard() {
         <div style={{ marginBottom: '64px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
             <div>
-              <h1 style={{ fontSize: '2rem', marginBottom: '8px' }}>솔루션 시연 영상 관리</h1>
-              <p style={{ color: 'var(--text-muted)' }}>유튜브 링크 등을 통해 시연 영상을 등록할 수 있습니다.</p>
+              <h1 style={{ fontSize: '2rem', marginBottom: '8px' }}>{t('adminVideoManage', language)}</h1>
+              <p style={{ color: 'var(--text-muted)' }}>{t('adminVideoDesc', language)}</p>
             </div>
             <button className="btn-primary" onClick={() => setShowAddVideoForm(true)} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Icons.Plus /> 새 영상 추가
+              <Icons.Plus /> {t('adminAddVideo', language)}
             </button>
           </div>
 
@@ -205,7 +206,7 @@ export default function AdminDashboard() {
             ))}
             {videos.length === 0 && (
               <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '60px', border: '1px dashed var(--glass-border)', borderRadius: '16px' }}>
-                  <p style={{ color: 'var(--text-muted)' }}>등록된 시연 영상이 없습니다.</p>
+                  <p style={{ color: 'var(--text-muted)' }}>{t('adminNoVideos', language)}</p>
               </div>
             )}
           </div>
@@ -214,11 +215,11 @@ export default function AdminDashboard() {
         <div style={{ marginBottom: '32px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div>
-              <h1 style={{ fontSize: '2rem', marginBottom: '8px' }}>포트폴리오 관리</h1>
-              <p style={{ color: 'var(--text-muted)' }}>현재 {projects.length}개의 포트폴리오가 등록되어 있습니다.</p>
+              <h1 style={{ fontSize: '2rem', marginBottom: '8px' }}>{t('adminPortfolioManage', language)}</h1>
+              <p style={{ color: 'var(--text-muted)' }}>{t('adminPortfolioCount', language).replace('{count}', projects.length.toString())}</p>
             </div>
             <button className="btn-primary" onClick={() => setShowAddForm(true)} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Icons.Plus /> 새 포트폴리오 추가
+              <Icons.Plus /> {t('adminAddPortfolio', language)}
             </button>
           </div>
         </div>
@@ -233,12 +234,12 @@ export default function AdminDashboard() {
               >
                 <Icons.X />
               </button>
-              <h2 style={{ marginBottom: '24px', color: 'white' }}>새 포트폴리오 글쓰기</h2>
+              <h2 style={{ marginBottom: '24px', color: 'white' }}>{t('adminAddFormTitle', language)}</h2>
               
               <form onSubmit={handleAddProject} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <input
                   type="text"
-                  placeholder="프로젝트 제목 (예: 00공장 PLC 제어)"
+                  placeholder={t('adminPjtTitle', language)}
                   value={newProject.title}
                   onChange={e => setNewProject({...newProject, title: e.target.value})}
                   required
@@ -246,7 +247,7 @@ export default function AdminDashboard() {
                 />
                 
                 <textarea
-                  placeholder="설명 (PLC 기종, 작업 내용 등)"
+                  placeholder={t('adminPjtDesc', language)}
                   rows={4}
                   value={newProject.description}
                   onChange={e => setNewProject({...newProject, description: e.target.value})}
@@ -259,10 +260,10 @@ export default function AdminDashboard() {
                   onChange={e => setNewProject({...newProject, tag: e.target.value})}
                   style={{ width: '100%', padding: '12px', background: 'rgba(0,0,0,0.3)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: 'white' }}
                 >
-                  <option>자동차 제어</option>
-                  <option>반도체 제어</option>
-                  <option>물류 자동화</option>
-                  <option>기타 제어</option>
+                  <option value="adminPjtTag1">{t('adminPjtTag1', language)}</option>
+                  <option value="adminPjtTag2">{t('adminPjtTag2', language)}</option>
+                  <option value="adminPjtTag3">{t('adminPjtTag3', language)}</option>
+                  <option value="adminPjtTag4">{t('adminPjtTag4', language)}</option>
                 </select>
 
                 <div style={{ position: 'relative', border: '2px dashed var(--glass-border)', borderRadius: '12px', padding: '40px', textAlign: 'center' }}>
@@ -275,18 +276,18 @@ export default function AdminDashboard() {
                   {newProject.image ? (
                     <div style={{ textAlign: 'center' }}>
                       <Icons.Check />
-                      <p>이미지가 선택됨!</p>
+                      <p>{t('adminImgSelect', language)}</p>
                     </div>
                   ) : (
                     <>
                       <Icons.Image />
-                      <p style={{ color: 'var(--text-muted)', marginTop: '16px' }}>{isUploading ? '변환 중...' : '클릭하여 사진 첨부'}</p>
+                      <p style={{ color: 'var(--text-muted)', marginTop: '16px' }}>{isUploading ? t('adminUploading', language) : t('adminImgClick', language)}</p>
                     </>
                   )}
                 </div>
 
                 <button type="submit" className="btn-primary" disabled={isUploading}>
-                  {isUploading ? '처리 중...' : '게시글 등록하기'}
+                  {isUploading ? t('adminProcessing', language) : t('adminSubmit', language)}
                 </button>
               </form>
             </div>
@@ -300,11 +301,11 @@ export default function AdminDashboard() {
               <div className="portfolio-image" style={{ backgroundImage: `url(${p.image})`, opacity: 0.8 }} />
               <div className="portfolio-info">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                  <span className="tag">{p.tag}</span>
+                  <span className="tag">{t(p.tag, language) || p.tag}</span>
                   <button 
                     onClick={() => deleteProject(p.id)}
                     style={{ background: 'none', border: 'none', color: '#ff4444', cursor: 'pointer', padding: '4px' }}
-                    title="삭제"
+                    title="Delete"
                   >
                     <Icons.Trash />
                   </button>
@@ -317,7 +318,7 @@ export default function AdminDashboard() {
 
           {projects.length === 0 && (
             <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '100px', border: '1px dashed var(--glass-border)', borderRadius: '16px' }}>
-                <p style={{ color: 'var(--text-muted)' }}>등록된 포트폴리오가 없습니다.</p>
+                <p style={{ color: 'var(--text-muted)' }}>{t('adminNoPortfolios', language)}</p>
             </div>
           )}
         </div>
@@ -332,12 +333,12 @@ export default function AdminDashboard() {
               >
                 <Icons.X />
               </button>
-              <h2 style={{ marginBottom: '24px', color: 'white' }}>새 시연 영상 등록</h2>
+              <h2 style={{ marginBottom: '24px', color: 'white' }}>{t('adminAddVideoTitle', language)}</h2>
               
               <form onSubmit={handleAddVideo} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <input
                   type="text"
-                  placeholder="영상 제목 (예: PLC 제어 시연)"
+                  placeholder={t('adminVideoTitle', language)}
                   value={newVideo.title}
                   onChange={e => setNewVideo({...newVideo, title: e.target.value})}
                   required
@@ -345,7 +346,7 @@ export default function AdminDashboard() {
                 />
                 
                 <textarea
-                  placeholder="간략한 영상 설명"
+                  placeholder={t('adminVideoDescShort', language)}
                   rows={2}
                   value={newVideo.description}
                   onChange={e => setNewVideo({...newVideo, description: e.target.value})}
@@ -355,7 +356,7 @@ export default function AdminDashboard() {
 
                 <input
                   type="text"
-                  placeholder="유튜브 또는 영상 링크 주소"
+                  placeholder={t('adminVideoUrl', language)}
                   value={newVideo.url}
                   onChange={e => setNewVideo({...newVideo, url: e.target.value})}
                   required
@@ -363,7 +364,7 @@ export default function AdminDashboard() {
                 />
 
                 <button type="submit" className="btn-primary">
-                  영상 등록하기
+                  {t('adminVideoSubmit', language)}
                 </button>
               </form>
             </div>

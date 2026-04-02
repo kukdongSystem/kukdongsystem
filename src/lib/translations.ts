@@ -11,8 +11,8 @@ export const dict: Translations = {
   navContact: { ko: '문의하기', en: 'Contact', zh: '联系我们', ja: 'お問い合わせ', de: 'Kontakt' },
   navConsult: { ko: '상담 신청', en: 'Request Consult', zh: '申请咨询', ja: 'ご相談', de: 'Beratung anfordern' },
 
-  project1Title: { ko: '자동차 도장 라인 PLC 제어 시스템', en: 'Automotive Painting Line PLC Control System', zh: '汽车涂装线PLC控制系统', ja: '自動車塗装라인PLC制御システム', de: 'Automobil-Lackierlinie PLC-Steuerungssystem' },
-  project1Desc: { ko: 'Mitsubishi FX5U 및 GT25 HMI를 이용한 완전 자동화 공정 구축', en: 'Built fully automated process using Mitsubishi FX5U and GT25 HMI', zh: '使用三菱FX5U和GT25 HMI构建的全自动化流程', ja: '三菱FX5UおよびGT25 HMIを使用した完全自動화 프로세스의 構築', de: 'Vollautomatisierter Prozess mit Mitsubishi FX5U und GT25 HMI' },
+  project1Title: { ko: '자동차 도장 라인 PLC 제어 시스템', en: 'Automotive Painting Line PLC Control System', zh: '汽车涂装线PLC控制系统', ja: '自動車塗装ラインPLC制御システム', de: 'Automobil-Lackierlinie PLC-Steuerungssystem' },
+  project1Desc: { ko: 'Mitsubishi FX5U 및 GT25 HMI를 이용한 완전 자동화 공정 구축', en: 'Built fully automated process using Mitsubishi FX5U and GT25 HMI', zh: '使用三菱FX5U和GT25 HMI构建的全自动化流程', ja: '三菱FX5UおよびGT25 HMIを使用した完全自動化プロセスの構築', de: 'Vollautomatisierter Prozess mit Mitsubishi FX5U und GT25 HMI' },
   project1Tag: { ko: '자동차/도장', en: 'Automotive/Painting', zh: '汽车/涂装', ja: '自動車/塗装', de: 'Automobil/Lackierung' },
   
   project2Title: { ko: '반도체 웨이퍼 이송 로봇 핸들링', en: 'Semiconductor Wafer Transfer Robot Handling', zh: '半导体晶圆传输机器人处理', ja: '半導体ウェーハ搬送ロボットハンドリング', de: 'Halbleiter-Wafer-Transfer-Robotik' },
@@ -25,7 +25,7 @@ export const dict: Translations = {
 
   // Textile Projects (New)
   project4Title: { ko: '원단 코팅기(Coating) 제어 시스템', en: 'Textile Coating Machine Control System', zh: '纺织涂层机控制系统', ja: '生地コーティング機制御システム', de: 'Beschichtungsmaschinen-Steuerung' },
-  project4Desc: { ko: '미세 텐션 유지 및 약품 코팅 두께 정밀 제어로 품질 혁신.', en: 'Quality innovation through fine tension maintenance and coating thickness control.', zh: '精细张力维持与涂层厚度控制', ja: '微細テンション維持およびコーティング厚さの精密制御', de: 'Qualitätsinnovationen durch präzise Spannungsregelung.' },
+  project4Desc: { ko: '미세 텐션 유지 및 약품 코팅 두께 정밀 제어로 품질 혁신.', en: 'Quality innovation through fine tension maintenance and coating thickness control.', zh: '精细张力维持与涂层厚度控制', ja: '微細テンション維持およびコー팅厚さの精密制御', de: 'Qualitätsinnovationen durch präzise Spannungsregelung.' },
   project4Tag: { ko: '섬유기계/코팅', en: 'Textile/Coating', zh: '纺织/涂层', ja: '繊維機械/コー팅', de: 'Textil/Beschichtung' },
 
   project5Title: { ko: '원단 리락싱(Relaxing)기 자동 제어', en: 'Textile Relaxing Machine Auto Control', zh: '纺织松弛机自动控制', ja: '生地リラクシング機自動制御', de: 'Textil-Relaxing-Maschinensteuerung' },
@@ -33,8 +33,8 @@ export const dict: Translations = {
   project5Tag: { ko: '섬유기계/정밀제어', en: 'Textile/Precision', zh: '纺织/精密', ja: '繊維機械/精密制御', de: 'Textil/Präzision' },
 
   project6Title: { ko: '섬유 비터(Beater)기 제어 솔루션', en: 'Textile Beater Machine Control Solution', zh: '纺织打浆机控制解决方案', ja: '繊維ビーター機制御ソリューション', de: 'Textil-Beater-Steuerungslösung' },
-  project6Desc: { ko: '강력한 기계적 비팅 공정 최적화 및 인버터 주파수 가변 제어.', en: 'Optimization of mechanical beating process and inverter frequency control.', zh: '机械打浆工艺优化与变频控制', ja: '強力な機械的ビーティング工程の最適化およびインバータ制御', de: 'Optimierung des mechanischen Schlagvorgangs.' },
-  project6Tag: { ko: '섬유기계/인버터', en: 'Textile/Inverter', zh: '纺织/变频', ja: '繊維機械/인버터', de: 'Textil/Inverter' },
+  project6Desc: { ko: '강력한 기계적 비팅 공정 최적화 및 인버터 주파수 가변 제어.', en: 'Optimization of mechanical beating process and inverter frequency control.', zh: '机械打浆工艺优化与变频控制', ja: '強力な機械的ビーティング工程の最適화およびインバータ制御', de: 'Optimierung des mechanischen Schlagvorgangs.' },
+  project6Tag: { ko: '섬유기계/인버터', en: 'Textile/Inverter', zh: '纺织/变频', ja: '繊維機械/インバータ', de: 'Textil/Inverter' },
 
   project7Title: { ko: '텐터 필터청소기 자동화 전문', en: 'Tenter Filter Cleaner Automation', zh: '定型机过滤器清洗自动化', ja: 'テンターフィルター洗浄機自動化', de: 'Tenter-Filterreiniger-Automatisierung' },
   project7Desc: { ko: '고효율 필터 클리닝 및 사이클 자동화로 필터 수명 연장.', en: 'Extending filter life through high-efficiency cleaning cycles.', zh: '通过高效过滤器清洗延长使用寿命', ja: '高効率フィルタークリーニングおよびサイクル自動化', de: 'Verlängerung der Filterlebensdauer durch Automatisierung.' },
@@ -45,12 +45,12 @@ export const dict: Translations = {
   project8Desc: { ko: '품질 저하 없는 고속 냉각 공정을 위한 온도 모니터링 시스템.', en: 'Temperature monitoring for high-speed cooling without food quality loss.', zh: '用于不降低品质的高速冷却温控系统', ja: '品質低下のない高速冷却工程のための温度管理', de: 'Temperaturüberwachung für Hochgeschwindigkeitskühlung.' },
   project8Tag: { ko: '식품기계/냉각', en: 'Food/Cooling', zh: '食品/冷却', ja: '食品機械/冷却', de: 'Lebensmittel/Kühlung' },
 
-  project9Title: { ko: '식품 2차 살균기(Sterilizer) 자동 제어', en: 'Secondary Sterilizer Auto Control', zh: '食品二次杀菌机自动控制', ja: '食品2차殺菌機自動制御', de: 'Sekundär-Sterilisator-Steuerung' },
+  project9Title: { ko: '식품 2차 살균기(Sterilizer) 자동 제어', en: 'Secondary Sterilizer Auto Control', zh: '食品二次杀菌机自动控制', ja: '食品二次殺菌機自動制御', de: 'Sekundär-Sterilisator-Steuerung' },
   project9Desc: { ko: '고온 고압 살균 사이클 기록 및 자동 제어로 위생 확보.', en: 'Record high-temp high-pressure cycles for total hygiene control.', zh: '高温高压杀菌周期自动记录', ja: '高温高圧殺菌サイクルの記録および自動制御', de: 'Hygienische Steuerung von Sterilisationszyklen.' },
   project9Tag: { ko: '식품기계/살균', en: 'Food/Sterilizer', zh: '食品/杀菌', ja: '食品機械/殺菌', de: 'Lebensmittel/Sterilisator' },
 
-  project10Title: { ko: '케첩 냉각기 및 컨베이어 통합 라인', en: 'Ketchup Cooler & Conveyor Integrated Line', zh: '番茄酱冷却器与输送带集成线', ja: 'ケチャップ冷却機およびコンベア統合라인', de: 'Ketchup-Kühler- & Förderlinie' },
-  project10Desc: { ko: '생산 흐름에 최적화된 컨베이어 연동 제어 및 적재 자동화.', en: 'Integrated conveyor link control and automated loading.', zh: '生产流优化的输送带联动控制', ja: '生産フローに最適化されたコンベア連動制御', de: 'Integrierte Förderbandsteuerung für Ketchup-Produktion.' },
+  project10Title: { ko: '케첩 냉각기 및 컨베이어 통합 라인', en: 'Ketchup Cooler & Conveyor Integrated Line', zh: '番茄酱冷却器与输送带集成线', ja: 'ケチャップ冷却機およびコンベア統合ライン', de: 'Ketchup-Kühler- & Förderlinie' },
+  project10Desc: { ko: '생산 흐름에 최적화된 컨베이어 연동 제어 및 적재 자동화.', en: 'Integrated conveyor link control and automated loading.', zh: '生产流优化的输送带联动控制', ja: '生産フローに最適化されたコンベア連동制御', de: 'Integrierte Förderbandsteuerung für Ketchup-Produktion.' },
   project10Tag: { ko: '식품기계/물류', en: 'Food/Conveyor', zh: '食品/输送', ja: '食品機械/コンベア', de: 'Lebensmittel/Förderband' },
 
   project11Title: { ko: '식품 산업용 대형 믹서(Mixer) 제어', en: 'Industrial Food Mixer Control', zh: '工业食品混合器控制', ja: '食品産業用大型ミキサー制御', de: 'Industrielle Lebensmittelmixer-Steuerung' },
@@ -59,7 +59,7 @@ export const dict: Translations = {
 
   footerRights: { ko: '© 1987-2026 KUKDONG SYSTEM All Rights Reserved.', en: '© 1987-2026 KUKDONG SYSTEM All Rights Reserved.', zh: '© 1987-2026 KUKDONG SYSTEM 保留所有权利。', ja: '© 1987-2026 KUKDONG SYSTEM All Rights Reserved.', de: '© 1987-2026 KUKDONG SYSTEM Alle Rechte vorbehalten' },
   footerAdmin: { ko: 'Admin Login', en: 'Admin Login', zh: '管理员登录', ja: '管理者ログイン', de: 'Admin-Login' },
-  footerAddress: { ko: '대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호', en: 'Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '大韩民国 京畿道 安山市 檀园区 产团路 326 안산流通商街 19栋 104号', ja: '大韓民国 京畿道 安山市 檀園区 産단路 326 安山流通商店街 19棟 104号', de: 'Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
+  footerAddress: { ko: '대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호', en: 'Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '大韩民国 京畿道 安山市 檀园区 产团路 326 안산流通商街 19栋 104号', ja: '大韓民国 京畿道 安山市 檀園区 産団路 326 安山流通商店街 19棟 104号', de: 'Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
   
   heroSubtitle1: { ko: 'STANDARD OF AUTOMATION', en: 'STANDARD OF AUTOMATION', zh: '自动化的标准', ja: '自動化の基準', de: 'STANDARD DER AUTOMATISIERUNG' },
   heroSubtitle2: { ko: 'TECHNICAL EXCELLENCE', en: 'TECHNICAL EXCELLENCE', zh: '技术卓越', ja: '技術の卓越性', de: 'TECHNISCHE EXZELLENZ' },
@@ -71,13 +71,13 @@ export const dict: Translations = {
   heroTitle2: { ko: '최고의 기술력,\n최적의 솔루션', en: 'Top Technology,\nOptimal Solutions', zh: '顶尖技术，\n最佳解决方案', ja: '最高の技術力、\n最適なソリューション', de: 'Spitzentechnologie,\nOptimale Lösungen' },
   heroTitle3: { ko: '24시간 멈추지 않는\n스마트 팩토리', en: '24/7 Non-Stop\nSmart Factory', zh: '24小时不断的\n智能工厂', ja: '24時間止まらない\nスマートファクトリー', de: '24/7 ununterbrochene\nSmart Factory' },
   heroTitle4: { ko: '섬유 생산의 혁신,\n정밀 자동화 시스템', en: 'Textile Innovation,\nPrecision Systems', zh: '纺织生产创新,\n精密自动化系统', ja: '繊維生産の革新、\n精密自動化システム', de: 'Textilinnovation,\nPräzisionssysteme' },
-  heroTitle5: { ko: '식품 공정의 신뢰,\n완벽한 자동화 구축', en: 'Reliable Food Process,\nPerfect Automation', zh: '食品加工信任,\n完美自动化构建', ja: '食品工程의 信頼、\n完璧な自動化構築', de: 'Lebensmittelprozess,\nPerfekte Automatisierung' },
+  heroTitle5: { ko: '식품 공정의 신뢰,\n완벽한 자동화 구축', en: 'Reliable Food Process,\nPerfect Automation', zh: '食品加工信任,\n完美自动化构建', ja: '食品工程の信頼、\n完璧な自動화構築', de: 'Lebensmittelprozess,\nPerfekte Automatisierung' },
   
   heroDesc1: { ko: '극동계전은 최첨단 PLC, HMI, SCADA 솔루션을 통해 고효율 자동 제어 시스템을 구축합니다.', en: 'KUKDONG SYSTEM builds high-efficiency automated control systems.', zh: '极东计电通过尖端的PLC解决方案构建高效自动化控制系统。', ja: '極東計電は最先端のPLCソリューションを通じて制御システムを構築します。', de: 'KUKDONG SYSTEM baut hocheffiziente automatische Steuerungssysteme.' },
   heroDesc2: { ko: '다양한 산업 현장의 니즈에 맞춘 정확하고 안정적인 자동제어 시스템.', en: 'Accurate and stable automated control systems tailored to various needs.', zh: '精确且稳定的自动化控制系统。', ja: '正確で安定した自動制御システム。', de: 'Genaue und stabile automatische Steuerungssysteme.' },
-  heroDesc3: { ko: '실시간 모니터링 및 원격 제어로 공장의 다운타임을 최소화합니다.', en: 'Minimize factory downtime with real-time monitoring and remote control.', zh: '通过实时监控，将工厂停机时间降至最低。', ja: 'リアルタイム監視で工장의 다운타임을 最小限に。', de: 'Minimieren Sie Werk-Ausfallzeiten durch Echtzeit-Überwachung.' },
+  heroDesc3: { ko: '실시간 모니터링 및 원격 제어로 공장의 다운타임을 최소화합니다.', en: 'Minimize factory downtime with real-time monitoring and remote control.', zh: '通过实时监控，将工厂停机时间降至最低。', ja: 'リアルタイム監視で工場のダウンタイムを最小限に。', de: 'Minimieren Sie Werk-Ausfallzeiten durch Echtzeit-Überwachung.' },
   heroDesc4: { ko: '원단 코팅기, 리락싱, 비터, 텐터 필터청소기 등 섬유 생산 전 공정에 최적화된 제어 솔루션을 제공합니다.', en: 'Optimized control for textile processes: coating, relaxing, beater, and filter cleaning.', zh: '针对涂层、松弛和过滤器清洁等纺织工艺优化的控制系统', ja: 'コーティング、リラクシング、ビーターなど繊維生産工程に最適な制御ソリューションを提供。', de: 'Optimierte Steuerungslösungen für Textilprozesse.' },
-  heroDesc5: { ko: '소스 터널냉각기, 2차살균기, 케첩냉각기, 컨베어, 믹서 등 위생과 효율을 동시에 잡는 스마트 식품 라인을 구축합니다.', en: 'Building HACCP smart food lines: coolers, sterilizers, and mixers.', zh: '构建符合HACCP标准的智能食品生产线', ja: '冷却機、殺菌機、ミキサー等、衛生と効率を両立する食品ラインを構築。', de: 'HACCP-konforme intelligente Lebensmittellinien.' },
+  heroDesc5: { ko: '소스 터널냉각기, 2차살균기, 케첩냉각기, 컨베어, 믹서 등 위생과 효율을 동시에 잡는 스마트 식품 라인을 구축합니다.', en: 'Building HACCP smart food lines: coolers, sterilizers, and mixers.', zh: '构建符合HACCP标准的智能食品生产线', ja: '冷却機、殺菌機、ミキサー等、衛生と効率를 両立하는 食品ラインを 構築。', de: 'HACCP-konforme intelligente Lebensmittellinien.' },
   
   heroBtnPortfolio: { ko: '포트폴리오 보기', en: 'View Portfolio', zh: '查看成功案例', ja: 'ポートフォリオを見る', de: 'Portfolio ansehen' },
   heroBtnContact: { ko: '문의 상담', en: 'Contact Us', zh: '咨询我们', ja: 'お問い合わせ', de: 'Kontaktieren Sie uns' },
@@ -91,7 +91,7 @@ export const dict: Translations = {
   field2Desc: { ko: '조작이 직관적이고 현장 상황을 한눈에 파악할 수 있는 그래픽 작화', en: 'User-friendly GUI design for clear factory visibility.', zh: '操作直观的现场图形界面设计。', ja: '操作が直感的なグラフィック作画。', de: 'User-friendly GUI-Design.' },
   field3: { ko: 'SCADA 시스템 감시', en: 'SCADA Systems', zh: 'SCADA 监控系统', ja: 'SCADA監視', de: 'SCADA-Systeme' },
   field3Desc: { ko: '공장 전체 데이터를 실시간으로 모니터링하는 통합 관제 솔루션', en: 'Upper-level integrated control solutions for the whole plant.', zh: '集成管制解决方案。', ja: '統合監視ソリューション。', de: 'Integrierte Steuerung des gesamten Werks.' },
-  field4: { ko: '인버터 & 서보 제어', en: 'Inverter & Servo', zh: '变频器与伺服控制', ja: '인버터 ＆ 서보 제어', de: 'Frequenzumrichter & Servo' },
+  field4: { ko: '인버터 & 서보 제어', en: 'Inverter & Servo', zh: '变频器与伺服控制', ja: '인버터 ＆ サーボ制御', de: 'Frequenzumrichter & Servo' },
   field4Desc: { ko: '정밀한 속도 및 위치 제어로 생산 정밀도를 높임.', en: 'Precise drive control improving precision.', zh: '精密的速度及位置控制。', ja: '精密な速度および位置制御。', de: 'Präzise Antriebssteuerung.' },
   fieldFood: { ko: '식품기계 자동화', en: 'Food Processing', zh: '食品机械自动化', ja: '食品機械自動化', de: 'Lebensmittelverarbeitung' },
   fieldFoodDesc: { ko: '위생적인 자동화 라인 및 식품 포장 제어 솔루션.', en: 'Hygienic automated lines meeting standards.', zh: '满足卫生标准的自动化线。', ja: '衛生的な自動化ライン。', de: 'Hygienische automatische Anlagen.' },
@@ -101,7 +101,7 @@ export const dict: Translations = {
   fieldLogisticsDesc: { ko: '컨베이어 통합 제어 및 자동 분류 시스템 구축.', en: 'Automated sorting and conveyor systems.', zh: '输送带联动与自动化。', ja: 'コンベア統合制御構築。', de: 'Automatisierte Sortiersysteme.' },
 
   portfolioTitle: { ko: '포트폴리오', en: 'Portfolio', zh: '项目案例', ja: 'ポートフォリオ', de: 'Portfolio' },
-  portfolioSubTitle: { ko: '기술력과 신뢰로 일궈낸 실적 리스트입니다.', en: 'A track record built on technology and trust.', zh: '以技术实力和信任取得의 业绩清单', ja: '実績リストです', de: 'Eine auf Technologie und Vertrauen basierende Erfolgsbilanz.' },
+  portfolioSubTitle: { ko: '기술력과 신뢰로 일궈낸 실적 리스트입니다.', en: 'A track record built on technology and trust.', zh: '以技术实力和信任取得的业绩清单', ja: '実績リストです', de: 'Eine auf Technologie und Vertrauen basierende Erfolgsbilanz.' },
   
   demoTitle: { ko: '솔루션 시연 영상', en: 'Automation Solutions Demo', zh: '自动化解决方案演示', ja: 'ソリューション動画', de: 'Automation Lösungs-Demo' },
   demoSubTitle: { ko: '극동계전이 구축한 정밀 제어 시스템의 실제 가동 모습입니다.', en: 'Actual operation footage of the systems.', zh: '系统的实际运行画面。', ja: '実際の稼働の様子です. ', de: 'Betriebsaufnahmen.' },
@@ -112,7 +112,7 @@ export const dict: Translations = {
   contactDesc: { ko: '극동계전이 최적의 솔루션을 제안해 드립니다. 아래 정보를 확인하시고 언제든 편하게 문의해 주시기 바랍니다.', en: 'KUKDONG SYSTEM will propose the optimal solution.', zh: '极东计电为您提供最佳解决方案。', ja: '最適のソリューションを提案します。', de: 'KUKDONG SYSTEM unterbreitet Ihnen die optimale Lösung.' },
   
   trustSubTitle: { ko: 'SINCE 1987, 2대째 가업을 이어가는 1%의 프리미엄 자동화 기술력', en: 'SINCE 1987, 2nd Gen Family Business Trusted by 1% in Premium Automation', zh: '始于1987，传承两代的高级自动化技术品牌', ja: 'SINCE 1987、2代にわたって受け継がれる1%のプレミアム自動化技術', de: 'SEIT 1987, ein Familienunternehmen in 2. Generation für Premium-Automatisierung' },
-  contactWhyTitle: { ko: '왜 극동계전을 선택해야 할까요?', en: 'Why Choose KUKDONG SYSTEM?', zh: '为什么选择极东计电？', ja: '왜 極東計電を選ぶのか？', de: 'Warum KUKDONG SYSTEM wählen?' },
+  contactWhyTitle: { ko: '왜 극동계전을 선택해야 할까요?', en: 'Why Choose KUKDONG SYSTEM?', zh: '为什么选择极东计电？', ja: 'なぜ極東計電を選ぶのか？', de: 'Warum KUKDONG SYSTEM wählen?' },
   
   trust1Title: { ko: '15년 이상의 현장 실무 경험', en: '15+ Years Field Experience', zh: '15年以上的现场实际经验', ja: '15年以上の実務経験', de: '15+ Jahre Praxiserfahrung' },
   trust1Desc: { ko: '수백 개가 넘는 설비 구축 노하우와 숙련된 기술력을 보유하고 있습니다.', en: 'Possessing expertise from hundreds of systems.', zh: '拥有数百个设备的构建诀窍', ja: '数百の設備構築ノウハウ。', de: 'Wir verfügen über das Know-how.' },
@@ -132,7 +132,7 @@ export const dict: Translations = {
   companyPhone: { ko: '031) 492-0895', en: '+82 31-492-0895', zh: '+82 31-492-0895', ja: '+82 31-492-0895', de: '+82 31-492-0895' },
   companyFax: { ko: '031) 495-3686', en: '+82 31-495-3686', zh: '+82 31-495-3686', ja: '+82 31-495-3686', de: '+82 31-495-3686' },
   contactDirectionsTitle: { ko: '오시는 길', en: 'Directions & Map', zh: '路线指南', ja: 'アクセス', de: 'Wegbeschreibung' },
-  mapAddress: { ko: '📍 대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호 (극동계전)', en: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '📍 大韩民国 京畿道 安山市 檀园区 产团路 326 안산流通商街 19栋 104号 (极东计电)', ja: '📍 大韓民国 京畿道 安山市 檀園区 産団路 326 安山流通商店街 19棟 104号 (極東計電)', de: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
+  mapAddress: { ko: '📍 대한민국 경기도 안산시 단원구 산단로 326 안산유통상가 19동 104호 (극동계전)', en: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea', zh: '📍 大韩民国 京畿道 安山市 檀园区 产团路 326 安山流通商街 19栋 104号 (极东计电)', ja: '📍 大韓民国 京畿道 安山市 檀園区 産団路 326 安山流通商店街 19棟 104号 (極東計電)', de: '📍 Rm 104, Bldg 19, Ansan Distribution Center, 326 Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Südkorea' },
   mapNaver: { ko: '네이버 지도', en: 'Naver Map', zh: 'Naver 地图', ja: 'NAVER地図', de: 'Naver Karte' },
   mapKakao: { ko: '카카오 맵', en: 'Kakao Map', zh: 'Kakao 地图', ja: 'Kakaoマップ', de: 'Kakao Karte' },
   mapGoogle: { ko: '구글 지도', en: 'Google Maps', zh: '谷歌地图', ja: 'Googleマップ', de: 'Google Maps' },
@@ -143,9 +143,51 @@ export const dict: Translations = {
   modalTech3: { ko: '지능형 알람 솔루션', en: 'Intelligent Alarm Solution', zh: '报警解决方案', ja: 'インテリジェント警告', de: 'Alarmlösungen' },
   modalTech4: { ko: '시스템 통합 및 시운전 완료', en: 'System Integration Completed', zh: '系统集成', ja: 'システム統合完了', de: 'Systemintegration' },
   modalCloseBtn: { ko: '프로젝트 닫기', en: 'Close Project', zh: '关闭项目', ja: '閉じる', de: 'Schließen' },
-  modalConsultBtn: { ko: '구축 상담하기', en: 'Consult Us', zh: '项目咨询', ja: '相談하는', de: 'Kontakt' },
+  modalConsultBtn: { ko: '구축 상담하기', en: 'Consult Us', zh: '项目咨询', ja: '相談する', de: 'Kontakt' },
   explore: { ko: '둘러보기', en: 'Explore', zh: '探索', ja: '探検', de: 'Erkunden' },
-  nowPlaying: { ko: '현재 재생 중', en: 'Now Playing', zh: '正在播放', ja: '再生中', de: 'Wiedergabe' },
+  nowPlaying: { ko: '현재 재생 중', en: 'Now Playing', zh: '正在播放', ja: '現在再生中', de: 'Wiedergabe' },
+  companyEmail: { ko: 'soons28@naver.com', en: 'soons28@naver.com', zh: 'soons28@naver.com', ja: 'soons28@naver.com', de: 'soons28@naver.com' },
+  
+  // Admin Login
+  adminLoginTitle: { ko: '관리자 로그인', en: 'Admin Login', zh: '管理员登录', ja: '管理者ログイン', de: 'Admin-Login' },
+  adminLoginDesc: { ko: '포트폴리오 관리를 위해 로그인하세요.', en: 'Login to manage portfolio.', zh: '登录以管理投资组合', ja: 'ポートフォリオ管理のためにログインしてください', de: 'Anmeldung zur Portfolioverwaltung' },
+  adminId: { ko: '아이디', en: 'Username', zh: '用户名', ja: 'ユーザーID', de: 'Benutzername' },
+  adminPw: { ko: '비밀번호', en: 'Password', zh: '密码', ja: 'パスワード', de: 'Passwort' },
+  adminLoginError: { ko: '아이디 또는 비밀번호가 올바르지 않습니다.', en: 'Invalid ID or password.', zh: '账号或密码错误', ja: 'IDまたはパスワードが正しくありません', de: 'Ungültige ID oder Passwort' },
+  adminLoginBtn: { ko: '로그인', en: 'Login', zh: '登录', ja: 'ログイン', de: 'Anmelden' },
+  adminBackHome: { ko: '홈페이지로 돌아가기', en: 'Back to Home', zh: '返回首页', ja: 'ホームページに戻る', de: 'Zurück zur Startseite' },
+
+  // Admin Dashboard
+  adminDashboard: { ko: '대시보드', en: 'Dashboard', zh: '仪表板', ja: 'ダッシュボード', de: 'Dashboard' },
+  adminGoHome: { ko: '홈으로 가기', en: 'Go Home', zh: '回首页', ja: 'ホームへ', de: 'Zum Home' },
+  adminLogout: { ko: '로그아웃', en: 'Logout', zh: '登出', ja: 'ログアウト', de: 'Abmelden' },
+  adminVideoManage: { ko: '솔루션 시연 영상 관리', en: 'Demo Video Management', zh: '演示视频管理', ja: 'デモ動画管理', de: 'Video-Management' },
+  adminVideoDesc: { ko: '유튜브 링크 등을 통해 시연 영상을 등록할 수 있습니다.', en: 'You can register demo videos through YouTube links, etc.', zh: '您可以通过 YouTube 链接等注册演示视频', ja: 'YouTubeリンクなどを通じてデモ動画を登録できます', de: 'Demo-Videos über YouTube-Links registrieren' },
+  adminAddVideo: { ko: '새 영상 추가', en: 'Add New Video', zh: '添加新视频', ja: '新しい動画を追加', de: 'Neues Video hinzufügen' },
+  adminNoVideos: { ko: '등록된 시연 영상이 없습니다.', en: 'No demo videos registered.', zh: '未注册演示视频', ja: '登録されたデモ動画はありません', de: 'Keine Demo-Videos registriert' },
+  adminPortfolioManage: { ko: '포트폴리오 관리', en: 'Portfolio Management', zh: '项目组合管理', ja: 'ポートフォリオ管理', de: 'Portfolio-Management' },
+  adminPortfolioCount: { ko: '현재 {count}개의 포트폴리오가 등록되어 있습니다.', en: 'Currently {count} portfolios registered.', zh: '目前已注册 {count} 个项目组合', ja: '現在 {count} 個のポートフォリオが登録されています', de: 'Aktuell {count} Portfolios registriert' },
+  adminAddPortfolio: { ko: '새 포트폴리오 추가', en: 'Add New Portfolio', zh: '添加新项目组合', ja: '新しいポートフォリオを追加', de: 'Neues Portfolio hinzufügen' },
+  adminAddFormTitle: { ko: '새 포트폴리오 글쓰기', en: 'Write New Portfolio', zh: '撰写新项目组合', ja: '新しいポートフォリオ作成', de: 'Neues Portfolio erstellen' },
+  adminPjtTitle: { ko: '프로젝트 제목 (예: 00공장 PLC 제어)', en: 'Project Title (e.g. Factory A PLC Control)', zh: '项目标题', ja: 'プロジェクトタイトル', de: 'Projekt-Titel' },
+  adminPjtDesc: { ko: '설명 (PLC 기종, 작업 내용 등)', en: 'Description (PLC model, tasks, etc.)', zh: '描述', ja: '説明', de: 'Beschreibung' },
+  adminPjtTag1: { ko: '자동차 제어', en: 'Automotive Control', zh: '汽车控制', ja: '自動車制御', de: 'Automobilsteuerung' },
+  adminPjtTag2: { ko: '반도체 제어', en: 'Semiconductor Control', zh: '半导体控制', ja: '半導体制御', de: 'Halbleitersteuerung' },
+  adminPjtTag3: { ko: '물류 자동화', en: 'Logistics Automation', zh: '物流自动化', ja: '物流自動化', de: 'Logistikautomatisierung' },
+  adminPjtTag4: { ko: '기타 제어', en: 'Other Control', zh: '其他控制', ja: 'その他制御', de: 'Sonstige Steuerung' },
+  adminImgSelect: { ko: '이미지가 선택됨!', en: 'Image selected!', zh: '图片已选择', ja: '画像が選択されました', de: 'Bild ausgewählt' },
+  adminImgClick: { ko: '클릭하여 사진 첨부', en: 'Click to attach photo', zh: '点击附加照片', ja: 'クリックして写真を添付', de: 'Foto anfügen' },
+  adminUploading: { ko: '변환 중...', en: 'Converting...', zh: '转换中', ja: '変換中', de: 'Konvertierung' },
+  adminSubmit: { ko: '게시글 등록하기', en: 'Submit Post', zh: '发布项目', ja: '投稿する', de: 'Veröffentlichen' },
+  adminProcessing: { ko: '처리 중...', en: 'Processing...', zh: '处理中', ja: '処理中', de: 'Verarbeitung' },
+  adminAddVideoTitle: { ko: '새 시연 영상 등록', en: 'Register New Demo Video', zh: '注册新演示视频', ja: '新しいデ모動画を登録', de: 'Neues Demo-Video registrieren' },
+  adminVideoTitle: { ko: '영상 제목 (예: PLC 제어 시연)', en: 'Video Title', zh: '视频标题', ja: '動画タイトル', de: 'Video-Titel' },
+  adminVideoDescShort: { ko: '간략한 영상 설명', en: 'Short description', zh: '简短描述', ja: '簡単な説明', de: 'Kurzbeschreibung' },
+  adminVideoUrl: { ko: '유튜브 또는 영상 링크 주소', en: 'YouTube or Video link', zh: '网址', ja: '動画リンク', de: 'Video-URL' },
+  adminVideoSubmit: { ko: '영상 등록하기', en: 'Register Video', zh: '注册视频', ja: '動画を登録', de: 'Video registrieren' },
+  adminNoPortfolios: { ko: '등록된 포트폴리오가 없습니다.', en: 'No portfolios registered.', zh: '未注册项目组合', ja: '登録されたポートフォリオはありません', de: 'Keine Portfolios registriert' },
+  adminDeleteConfirm: { ko: '해당 항목을 삭제하시겠습니까?', en: 'Are you sure you want to delete this item?', zh: '您确定要删除此项目吗？', ja: 'この項目を削除してもよろしいですか？', de: 'Möchten Sie dieses Element wirklich löschen?' },
+  adminImgRequired: { ko: '이미지를 업로드해주세요.', en: 'Please upload an image.', zh: '请上传图片', ja: '画像をアップロードしてください', de: 'Bitte laden Sie ein Bild hoch.' },
 };
 
 export function t(key: string, lang: Language) {
