@@ -76,7 +76,8 @@ export default function Home() {
       title: t('project1Title', lang),
       description: t('project1Desc', lang),
       tag: t('project1Tag', lang),
-      image: '/images/hero.png'
+      image: '/images/hero.png',
+      images: ['/images/hero.png', '/images/food_cooler.png', '/images/food_sterilizer.png']
     },
     {
       id: 2,
@@ -157,6 +158,7 @@ export default function Home() {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const [allVideos, setAllVideos] = useState<Video[]>([]);
   const [activeVideo, setActiveVideo] = useState<Video | null>(null);
+  const [fullScreenImage, setFullScreenImage] = useState<string | null>(null);
 
   // Update static projects in state when language changes
   useEffect(() => {
@@ -702,8 +704,10 @@ export default function Home() {
               <div 
                 className="modal-img-display" 
                 style={{ 
-                  backgroundImage: `url(${selectedProject.images ? selectedProject.images[currentImgIndex] : selectedProject.image})` 
+                  backgroundImage: `url(${selectedProject.images ? selectedProject.images[currentImgIndex] : selectedProject.image})`,
+                  cursor: 'zoom-in'
                 }}
+                onClick={() => setFullScreenImage(selectedProject.images ? selectedProject.images[currentImgIndex] : selectedProject.image)}
               />
             </div>
 
@@ -718,7 +722,7 @@ export default function Home() {
               </button>
               
               <div style={{ flex: 1 }}>
-                <span className="tag" style={{ marginBottom: '20px' }}>{selectedProject.tag}</span>
+                 <span className="tag" style={{ marginBottom: '20px' }}>{selectedProject.tag}</span>
                 <h2 className="modal-title">{selectedProject.title}</h2>
                 <div style={{ width: '40px', height: '4px', background: 'var(--accent-primary)', marginBottom: '30px' }} />
                 
@@ -743,6 +747,33 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Fullscreen Image Lightbox */}
+      {fullScreenImage && (
+        <div 
+          style={{
+            position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+            backgroundColor: 'rgba(0,0,0,0.95)', zIndex: 99999, display: 'flex',
+            alignItems: 'center', justifyContent: 'center', cursor: 'zoom-out'
+          }}
+          onClick={() => setFullScreenImage(null)}
+        >
+          <img 
+            src={fullScreenImage} 
+            alt="Fullscreen View" 
+            style={{ maxWidth: '95vw', maxHeight: '95vh', objectFit: 'contain' }}
+          />
+          <button 
+            style={{
+              position: 'absolute', top: '20px', right: '20px', background: 'none', border: 'none',
+              color: 'white', fontSize: '2rem', cursor: 'pointer'
+            }}
+            onClick={() => setFullScreenImage(null)}
+          >
+            ×
+          </button>
         </div>
       )}
     </main>
