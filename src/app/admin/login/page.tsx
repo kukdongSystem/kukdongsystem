@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Lock, User } from 'lucide-react';
 
@@ -77,9 +78,9 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <a href="/" style={{ display: 'block', textAlign: 'center', marginTop: '24px', color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.9rem' }}>
+        <Link href="/" style={{ display: 'block', textAlign: 'center', marginTop: '24px', color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.9rem' }}>
           홈페이지로 돌아가기
-        </a>
+        </Link>
       </div>
     </div>
   );

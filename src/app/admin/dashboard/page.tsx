@@ -59,7 +59,8 @@ export default function AdminDashboard() {
   const [isSavingVideo, setIsSavingVideo] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted((prev) => (prev ? prev : true));
     const isAdmin = localStorage.getItem('isAdmin');
     if (!isAdmin) {
       router.push('/admin/login');

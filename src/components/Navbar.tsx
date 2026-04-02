@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import Link from 'next/link';
+import { useLanguage, Language } from '@/contexts/LanguageContext';
 import { t } from '@/lib/translations';
 
 export default function Navbar() {
@@ -9,7 +10,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className="container">
-        <a href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+        <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 100 100" fill="none">
             <defs>
               <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -24,17 +25,17 @@ export default function Navbar() {
             <span style={{ fontWeight: '900', letterSpacing: '0.08em', color: '#fff' }}>KUKDONG</span>
             <span style={{ fontWeight: '500', fontSize: '0.75rem', color: 'var(--accent-primary)', letterSpacing: '0.2em' }}>SYSTEM</span>
           </div>
-        </a>
+        </Link>
         <ul className="nav-links">
-          <li><a href="/#about">{t('navAbout', language)}</a></li>
-          <li><a href="/#services">{t('navServices', language)}</a></li>
-          <li><a href="/#portfolio">{t('navPortfolio', language)}</a></li>
-          <li><a href="/#contact">{t('navContact', language)}</a></li>
+          <li><Link href="/#about">{t('navAbout', language)}</Link></li>
+          <li><Link href="/#services">{t('navServices', language)}</Link></li>
+          <li><Link href="/#portfolio">{t('navPortfolio', language)}</Link></li>
+          <li><Link href="/#contact">{t('navContact', language)}</Link></li>
         </ul>
         <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
           <select
             value={language}
-            onChange={(e) => setLanguage(e.target.value as any)}
+            onChange={(e) => setLanguage(e.target.value as Language)}
             style={{ 
               background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', 
               color: '#fff', borderRadius: '20px', padding: '6px 14px', fontSize: '13px', 

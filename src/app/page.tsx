@@ -62,7 +62,7 @@ const Icons = {
   )
 };
 
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage, Language } from '@/contexts/LanguageContext';
 import { t } from '@/lib/translations';
 
 // Removed staticProjects out of global scope to compute it per language
@@ -70,7 +70,7 @@ import { t } from '@/lib/translations';
 export default function Home() {
   const { language } = useLanguage();
 
-  const getStaticProjects = (lang: any): Project[] => [
+  const getStaticProjects = (lang: Language): Project[] => [
     {
       id: 1,
       title: t('project1Title', lang),
