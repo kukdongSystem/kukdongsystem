@@ -76,16 +76,14 @@ export default function Home() {
       title: t('project1Title', lang),
       description: t('project1Desc', lang),
       tag: t('project1Tag', lang),
-      image: '/images/hero.png',
-      images: ['/images/hero.png', '/images/food_cooler.png', '/images/food_sterilizer.png']
+      image: '/images/hero.png'
     },
     {
       id: 2,
       title: t('project2Title', lang),
       description: t('project2Desc', lang),
       tag: t('project2Tag', lang),
-      image: '/images/robot.png',
-      images: ['/images/robot.png', '/images/plc.png', '/images/hmi.png']
+      image: '/images/robot.png'
     },
     {
       id: 3,
