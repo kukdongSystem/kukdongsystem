@@ -527,46 +527,32 @@ export default function Home() {
           </div>
           <div className="glass" style={{ padding: '80px', textAlign: 'center' }}>
             <div className="grid-cols-3" style={{ textAlign: 'left' }}>
-              <div style={{ display: 'flex', gap: '16px' }}>
-                <Icons.Check />
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: '4px' }}><Icons.Check /></div>
                 <div>
                   <h4 style={{ marginBottom: '8px' }}>{t('trust1Title', language)}</h4>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{t('trust1Desc', language)}</p>
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: '16px' }}>
-                <Icons.Check />
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: '4px' }}><Icons.Check /></div>
                 <div>
                   <h4 style={{ marginBottom: '8px' }}>{t('trust2Title', language)}</h4>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{t('trust2Desc', language)}</p>
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: '16px' }}>
-                <Icons.Check />
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: '4px' }}><Icons.Check /></div>
                 <div>
                   <h4 style={{ marginBottom: '8px' }}>{t('trust3Title', language)}</h4>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{t('trust3Desc', language)}</p>
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: '16px' }}>
-                <Icons.Check />
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: '4px' }}><Icons.Check /></div>
                 <div>
                   <h4 style={{ marginBottom: '8px' }}>{t('trust4Title', language)}</h4>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{t('trust4Desc', language)}</p>
-                </div>
-              </div>
-              <div style={{ display: 'flex', gap: '16px' }}>
-                <Icons.Check />
-                <div>
-                  <h4 style={{ marginBottom: '8px' }}>{t('trust5Title', language)}</h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{t('trust5Desc', language)}</p>
-                </div>
-              </div>
-              <div style={{ display: 'flex', gap: '16px' }}>
-                <Icons.Check />
-                <div>
-                  <h4 style={{ marginBottom: '8px' }}>{t('trust6Title', language)}</h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{t('trust6Desc', language)}</p>
                 </div>
               </div>
             </div>
@@ -582,7 +568,7 @@ export default function Home() {
             <p style={{ color: 'var(--text-muted)' }}>{t('contactDesc', language)}</p>
           </div>
 
-          <div className="grid-cols-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px' }}>
+          <div className="grid-cols-2" style={{ gap: '40px' }}>
             {/* Left: Contact Info */}
             <div className="glass" style={{ padding: '40px', display: 'flex', flexDirection: 'column', gap: '30px' }}>
               <div>
