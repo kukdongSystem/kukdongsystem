@@ -576,28 +576,28 @@ export default function Home() {
                 
                 {/* Phone */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '28px' }}>
-                  <div className="service-icon" style={{ marginBottom: 0 }}><Icons.Phone /></div>
-                  <div style={{ textAlign: 'left' }}>
+                  <div className="service-icon" style={{ flexShrink: 0, marginBottom: 0 }}><Icons.Phone /></div>
+                  <div style={{ textAlign: 'left', minWidth: 0, flex: 1 }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('contactTechConsult', language)}</p>
-                    <h3 style={{ fontSize: '1.8rem', fontWeight: '800' }}>{t('companyPhone', language)}</h3>
+                    <h3 style={{ fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', fontWeight: '800', wordBreak: 'keep-all' }}>{t('companyPhone', language)}</h3>
                   </div>
                 </div>
 
                 {/* FAX */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '28px' }}>
-                  <div className="service-icon" style={{ marginBottom: 0 }}><Icons.Printer /></div>
-                  <div style={{ textAlign: 'left' }}>
+                  <div className="service-icon" style={{ flexShrink: 0, marginBottom: 0 }}><Icons.Printer /></div>
+                  <div style={{ textAlign: 'left', minWidth: 0, flex: 1 }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('contactDirectFax', language)}</p>
-                    <h3 style={{ fontSize: '1.6rem', fontWeight: '700' }}>{t('companyFax', language)}</h3>
+                    <h3 style={{ fontSize: 'clamp(1.2rem, 3.5vw, 1.6rem)', fontWeight: '700', wordBreak: 'keep-all' }}>{t('companyFax', language)}</h3>
                   </div>
                 </div>
 
                 {/* Email */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '10px' }}>
-                  <div className="service-icon" style={{ marginBottom: 0 }}><Icons.Mail /></div>
-                  <div style={{ textAlign: 'left' }}>
+                  <div className="service-icon" style={{ flexShrink: 0, marginBottom: 0 }}><Icons.Mail /></div>
+                  <div style={{ textAlign: 'left', minWidth: 0, flex: 1 }}>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('contactOfficialEmail', language)}</p>
-                    <h3 style={{ fontSize: '1.4rem', fontWeight: '600' }}>soons28@naver.com</h3>
+                    <h3 style={{ fontSize: 'clamp(1.1rem, 3vw, 1.4rem)', fontWeight: '600', wordBreak: 'break-all' }}>soons28@naver.com</h3>
                   </div>
                 </div>
               </div>
