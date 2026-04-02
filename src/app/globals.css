@@ -22,6 +22,14 @@
   margin: 0;
 }
 
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 body {
   background-color: var(--bg-color);
   background-image: 
@@ -291,6 +299,11 @@ section {
     padding: 0 16px !important;
     gap: 10px !important; 
     box-sizing: border-box !important;
+    width: 100vw !important;
+  }
+
+  .nav-links {
+    display: none !important;
   }
 
   .logo {
