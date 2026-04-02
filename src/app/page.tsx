@@ -719,7 +719,7 @@ export default function Home() {
               
               <div style={{ flex: 1 }}>
                 <span className="tag" style={{ marginBottom: '20px' }}>{selectedProject.tag}</span>
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>{selectedProject.title}</h2>
+                <h2 className="modal-title">{selectedProject.title}</h2>
                 <div style={{ width: '40px', height: '4px', background: 'var(--accent-primary)', marginBottom: '30px' }} />
                 
                 <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '40px' }}>
