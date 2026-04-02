@@ -599,7 +599,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <button className="btn-primary" style={{ width: '100%' }}>{t('contactLiveConsultBtn', language)}</button>
+              <a 
+                href={`mailto:${t('companyEmail', language)}?subject=${encodeURIComponent(language === 'ko' ? '[극동계전] 프로젝트 구축 상담 문의' : language === 'en' ? '[KUKDONG SYSTEM] Project Consultation Inquiry' : language === 'zh' ? '[极东计电] 项目咨询' : language === 'ja' ? '[極東計電] プロジェクト相談' : '[KUKDONG SYSTEM] Projektanfrage')}`}
+                className="btn-primary" 
+                style={{ width: '100%', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+              >
+                {t('contactLiveConsultBtn', language)}
+              </a>
             </div>
 
             {/* Right: Map & Location */}
