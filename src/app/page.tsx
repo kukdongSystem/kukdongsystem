@@ -271,6 +271,8 @@ export default function Home() {
                 transform: currentHero === index ? 'scale(1.05)' : 'scale(1)',
                 zIndex: 0
               }}
+              role="img"
+              aria-label={slide.title}
             />
           ))}
         </div>
@@ -310,6 +312,10 @@ export default function Home() {
                       </div>
                     ))}
                   </h1>
+                  {/* SEO optimized hidden description */}
+                  <h2 style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', border: '0' }}>
+                    극동계전은 안산 유통상가에 위치한 PLC 설계, HMI 제작, 자동제어 전문 기업입니다.
+                  </h2>
                 </div>
 
                 <div className="hero-text-wrapper">

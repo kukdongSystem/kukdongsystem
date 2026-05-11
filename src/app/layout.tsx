@@ -3,16 +3,36 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "극동계전 | KUKDONG SYSTEM - LS PLC & 미쓰비시 PLC 자동화 솔루션 전문",
-  description: "극동계전(KUKDONG SYSTEM)은 LS PLC, LS 인버터, 미쓰비시 PLC, 미쓰비시 인버터 등 글로벌 표준 제품을 바탕으로 최적의 자동화 솔루션을 제공하는 스마트 팩토리 설계 전문 기업입니다.",
+  description: "극동계전(KUKDONG SYSTEM)은 LS PLC, 미쓰비시 PLC, 인버터 제어, 스마트 팩토리 설계 전문 기업입니다. 공장 자동화 및 정밀 제어 시스템 구축 상담 환영.",
   keywords: [
     "극동계전", "KUKDONG SYSTEM", "공장자동화", "자동제어", "PLC 설계", "HMI 제작", "SCADA 전문가", 
     "LS PLC", "LS Inverter", "LS 인버터", "Mitsubishi PLC", "Mitsubishi Inverter", "미쓰비시 PLC", "미쓰비시 인버터",
-    "스마트팩토리 솔루션", "정밀제어시스템", "Industrial Automation", "Smart Factory Service"
+    "스마트팩토리 솔루션", "정밀제어시스템", "Industrial Automation", "Smart Factory Service", "안산 유통상가 PLC", "PLC 프로그래밍"
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: "극동계전 | KUKDONG SYSTEM - 공장자동화 및 PLC 제어 전문",
     description: "LS 및 미쓰비시 PLC/인버터 기반의 신뢰할 수 있는 자동화 파트너",
-    images: ["/images/hero.png"],
+    url: "https://kukdongsystem.vercel.app",
+    siteName: "극동계전",
+    images: [
+      {
+        url: "/images/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "극동계전 자동화 솔루션",
+      },
+    ],
     type: "website",
     locale: "ko_KR",
   },
